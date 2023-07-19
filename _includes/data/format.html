@@ -13,7 +13,7 @@
                         {% for format_data in site.data.home_format_data %}
                             <li class="{{ format_data.inverted }}">
                                 <div class="timeline-image">
-                                    <img class="img-circle img-responsive" src="../css/img/{{ format_data.img }}" alt="">
+                                    <img class="img-circle img-responsive" src="css/img/{{ format_data.img }}" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
@@ -26,11 +26,11 @@
                             </li>
                         {% endfor %}
                         <li class="timeline-inverted">
-                            <div class="timeline-image" id="signup">
-                                <h4>
-                                    <a href="https://forms.gle/uzzpeNThWCEJUNf26">Sign me up!</a>
-                                </h4>
-                            </div>
+                            <a href="https://forms.gle/uzzpeNThWCEJUNf26">
+                                <div class="timeline-image btn-primary">
+                                    <h4>Sign me<br>up!</h4>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>

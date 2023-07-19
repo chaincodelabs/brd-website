@@ -6,7 +6,7 @@ url: "Your-Link.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-logo: "../css/img/icon-large.png"
+logo: "css/img/logo-small-transparent.png"
 
 include: ['_pages']
 

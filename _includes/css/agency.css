@@ -572,7 +572,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    /* background-color: #{{ site.data.template.color.primary }}; */
 }
 
 .timeline>li .timeline-image h4 {
@@ -624,7 +624,7 @@ section h3.section-subheading {
 }
 
 .timeline>li .timeline-image h4 {
-    margin-top: 18px;
+    margin-top: 13px;
 }
 
 @media(min-width:768px) {
