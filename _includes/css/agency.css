@@ -348,12 +348,12 @@ header {
     -o-background-size: cover;
 }
 
-header .intro-text {
+header .event-text {
     padding-top: 25vh;
     padding-bottom: 50px;
 }
 
-header .intro-text .intro-lead-in {
+header .event-text .event-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 22px;
@@ -361,7 +361,7 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
-header .intro-text .intro-heading {
+header .event-text .event-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
@@ -371,12 +371,12 @@ header .intro-text .intro-heading {
 }
 
 @media(min-width:768px) {    
-    header .intro-text {
+    header .event-text {
         padding-top: 300px;
         padding-bottom: 200px;
     }
 
-    header .intro-text .intro-lead-in {
+    header .event-text .event-lead-in {
         margin-bottom: 25px;
         font-family: {{ site.data.template.font.secondary }};
         font-size: 40px;
@@ -384,7 +384,7 @@ header .intro-text .intro-heading {
         line-height: 40px;
     }
 
-    header .intro-text .intro-heading {
+    header .event-text .event-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
@@ -619,6 +619,14 @@ section h3.section-subheading {
     margin-bottom: 0;
 }
 
+.timeline>li .timeline-image a {
+    color: white;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 18px;
+}
+
 @media(min-width:768px) {
     .timeline:before {
         left: 50%;
@@ -644,7 +652,7 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 16px;
+        margin-top: 27px;
         font-size: 100%;
         line-height: 18px;
     }
@@ -700,10 +708,6 @@ section h3.section-subheading {
     .timeline>li .timeline-image h4 {
         font-size: 150%;
         margin-top: 57px;
-    }
-
-    .timeline>li .timeline-image a {
-        color: white;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -855,7 +859,7 @@ ul.social-buttons li a:active {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content p.item-intro {
+.portfolio-modal .modal-content p.item-event {
     margin: 20px 0 30px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 100%;

@@ -1,4 +1,4 @@
-.about {
+.format {
     padding: 5%;
     margin: 30px 15vw 30px 15vw;
 
@@ -33,31 +33,31 @@
     }
 }
 
-.about-container-top {
+.format-container-top {
   margin-top: 100px;
 }
 
-.about-container-bottom {
+.format-container-bottom {
   margin-bottom: 60px;
 }
 
 @media screen and (max-width : 1200px){
-  .about {
+  .format {
       margin: 20px 10vw 20px 10vw;
   }
-  .about-container-top {
+  .format-container-top {
     margin-top: 100px;
   }
-  .about-container-bottom {
+  .format-container-bottom {
     margin-bottom: 80px;
   }
 }
 
 @media screen and (max-width : 760px){
-  .about {
+  .format {
       margin: 10px 10px 10px 10px;
   }
-  .about-container-top {
+  .format-container-top {
     margin-top: 80px;
   }
   h1 {
