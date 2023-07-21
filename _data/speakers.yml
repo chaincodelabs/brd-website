@@ -1,26 +1,72 @@
-- title: Name
-  name: Name-1
-  subtitle: Position
-  img: TBD.jpg
-  thumbnail: TBD.jpg
-  alt: Picture of TBD
-  topic: Topic
-  description: More Info
+- title: Victor Shoup
+  name: vshoup
+  subtitle: DFINITY/NYU
+  img: vshoup.jpg
+  thumbnail: vshoup.jpg
+  topic: Fast batched asynchronous distributed key generation
+  description: "Victor is a computer scientist and mathematician working in the areas of cryptography and computer algebra. He is currently a Principal Researcher at DFINITY and Professor Emeritus of Computer Science at NYU. His previous roles include: Visiting Research Scientist, IBM TJ Watson Research Center; Research Scientist, IBM Research, Zurich; and Research Scientist, Bellcore"
 
-- title: Name
-  name: Name-2
-  subtitle: Position
-  img: TBD.jpg
-  thumbnail: TBD.jpg
-  alt: Picture of TBD
-  topic: Topic
-  description: More Info
 
-- title: Name
-  name: Name-3
-  subtitle: Position
-  img: TBD.jpg
-  thumbnail: TBD.jpg
-  alt: Picture of TBD
-  topic: Topic
-  description: More Info
+- title: Benedikt Bünz
+  name: bbunz
+  subtitle: Espresso Systems/NYU
+  img: bbunz.jpg
+  thumbnail: bbunz.jpg
+  topic: Recent developments in (Bitcoin compatible) zk-SNARKs
+  description: Benedikt is an assistant professor at the NYU Courant Institute. He works on applied cryptography with a special focus on Blockchains. His research includes several innovations that have been relevant or applied to Bitcoin, including Bulletproofs (a zero-knowledge proof useful for Confidential Transactions), Flyclient (a protocol for ultra-light PoW clients), and VDFs, a new primitive that is useful for building unbiasable randomness beacons
+
+- title: Ethan Heilman
+  name: eheilman
+  subtitle: BastionZero
+  img: eheilman.jpg
+  thumbnail: eheilman.jpg
+  topic: An exploration of Bitcoin's P2P network and its security
+  description: Ethan is CTO and Co-Founder of BastionZero. He has a PhD in Computer Science from Boston University and is the author of over 10 technical papers on cryptocurrency, blockchain, cryptography and network security. He is the inventor of the TumbleBit protocol and has contributed to Bitcoin Core. In his spare time, he enjoys breaking hash functions
+
+- title: Ittay Eyal
+  name: ieyal
+  subtitle: Technion/IC3
+  img: ieyal.jpg
+  thumbnail: ieyal.jpg
+  topic: Authentication
+  description: Ittay is an Associate Professor in the Electrical and Computer Engineering Faculty at the Technion and an Associate Director at the Initiative for Cryptocurrencies and Contracts (IC3). Eyal completed his PhD at the Technion, followed by a postdoctoral fellowship at Cornell University. He was awarded a 2018 Alon Fellowship and a 2022 Krill Prize. His research focuses on performance and security in decentralized systems
+
+- title: Maria Apostolaki
+  name: mapostolaki
+  subtitle: Princeton
+  img: mapostolaki.jpg
+  thumbnail: mapostolaki.jpg
+  topic: Network Security for Blockchain networks
+  description: Maria is an Assistant Professor of Electrical and Computer Engineering at Princeton University. Her research spans the fields of networking, security, and blockchain. She has uncovered network routing vulnerabilities on blockchain systems and has worked towards designing mitigation mechanisms. Maria has been named a rising star in Computer Networking and Communications, and she was the recipient of the Google Research Scholar Award, as well as the IETF/IRTF Applied Networking Research Prize. Maria completed her PhD in 2021 at ETH Zurich. After receiving her PhD, she spent a year at Carnegie Mellon University, working as a postdoctoral researcher. Prior to her PhD, she earned her diploma in Electrical and Computer Engineering at the National Technical University of Athens, Greece
+
+- title: Carla Kirk-Cohen
+  name: ckirkcohen
+  subtitle: Chaincode Labs
+  img: ckirkcohen.jpg
+  thumbnail: ckirkcohen.jpg
+  topic: From paper to BOLT
+  description: Carla is a software engineer working on the implementation and improvement of the Lightning Network specification at Chaincode Labs. Her current focus is on the specification of mitigation against "channel jamming" denial of service attacks against the lightning network. She previously worked at Lightning Labs, where she worked on reliability improvements to LND and led the Lightning Loop submarine swap team
+
+- title: Mark Erhardt
+  name: merhardt
+  subtitle: Chaincode Labs
+  img: merhardt.jpg
+  thumbnail: merhardt.jpg
+  topic: From paper to BIP
+  description: Mark enjoys research and development on Bitcoin, especially wallets and UTXO management. He wrote his thesis on Coin Selection, helps organize Bitcoin meetups, and is an avid contributor to Bitcoin Stack Exchange. Previously, Mark tweaked the blockchain footprint of enterprise wallets at BitGo
+
+- title: Martin Zumsande
+  name: mzumsande
+  subtitle: Chaincode Labs
+  img: mzumsande.jpg
+  thumbnail: mzumsande.jpg
+  topic: Bitcoin Core - P2P in practice
+  description: Martin started contributing to Bitcoin Core in 2019 and switched to full-time in late 2021. His main interest is in the peer-to-peer network of Bitcoin, in particular address relay. Before discovering Bitcoin, he received a PhD in physics and worked as a consultant in the banking industry
+
+- title: Pieter Wuille
+  name: pwuille
+  subtitle: Chaincode Labs
+  img: pwuille.jpg
+  thumbnail: pwuille.jpg
+  topic: Cluster Mempool - Fixing Relay of Dependent Transactions
+  description: Pieter discovered Bitcoin in December 2010 and started contributing code to the project in May 2011. Since then, he has written significant parts of the reference client's code, in particular, to improve performance and code organization. In addition to authoring and co-authoring 16 Bitcoin Improvement Proposals, Pieter contributed to the design of Miniscript, and co-authored papers on MuSig and Bulletproof, and contributed to libraries like libsecp256k1, ctaes, and minisketch. Before Chaincode, Pieter was a co-founder and Core Engineer at Blockstream and worked as a Site Reliability Engineer at Google. Pieter received his Ph.D. in Computer Science at the University of Leuven, where he focused on programming language design. In his free time, Pieter likes climbing and playing board games
