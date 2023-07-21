@@ -420,6 +420,12 @@ section h3.section-subheading {
     }
 }
 
+#speakers img,
+img.speakers-info
+{
+    max-height: 360px;
+}
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
@@ -576,8 +582,8 @@ section h3.section-subheading {
 }
 
 .timeline>li .timeline-image h4 {
-    margin-top: 12px;
-    font-size: 100%;
+    margin-top: 22px;
+    font-size: 85%;
     line-height: 14px;
 }
 
@@ -621,10 +627,6 @@ section h3.section-subheading {
 
 .timeline>li .timeline-image a {
     color: white;
-}
-
-.timeline>li .timeline-image h4 {
-    margin-top: 13px;
 }
 
 @media(min-width:768px) {
@@ -680,8 +682,8 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 30px;
-        font-size: 100%;
+        margin-top: 45px;
+        font-size: 150%;
         line-height: 26px;
     }
 
