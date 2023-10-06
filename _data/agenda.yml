@@ -1,48 +1,59 @@
 - time: 9:15 - 9:40
-  info: "<br>Welcoming<br><br>"
+  topic: Welcoming
 
 - time: 9:40 - 10:00
-  info: "<br><b>Sergi Delgado</b><br>Opening remarks<br><br>"
+  speaker: Sergi Delgado
+  topic: Opening remarks
 
 - time: 10:00 - 10:25
-  info: "<br><b>Ittay Eyal</b><br>Authentication<br><br>"
+  speaker: Ittay Eyal
+  topic: Authentication
 
 - time: 10:25 - 10:50
-  info: "<br><b>Mark Erhardt</b><br>From Paper To BIP<br><br>"
+  speaker: Mark Erhardt
+  topic: From Paper To BIP
 
 - time: 10:50 - 11:10
-  info: "<br>Coffee Break<br><br>"
+  topic: Coffee Break
 
 - time: 11:10 - 11:35
-  info: "<br><b>Victor Shoup</b><br>Fast Batched Asynchronous Distributed Key Generation<br><br>"
+  speaker: Victor Shoup
+  topic: Fast Batched Asynchronous Distributed Key Generation
 
 - time: 11:35 - 12:00
-  info: "<br><b>Pieter Wuille</b><br>Cluster Mempool: Fixing Relay of Dependent Transactions<br><br>"
+  speaker: Pieter Wuille
+  topic: Cluster Mempool - Fixing Relay of Dependent Transactions
 
 - time: 12:00 - 12:30
-  info: "<br><br><b>Dongning Guo and Ling Ren (BRD23 Price Winners)</b><br>Bitcoin’s Latency–Security Analysis Made Simple<br><br>"
+  speaker: Dongning Guo and Ling Ren (Bitcoin research prize winners)
+  topic: "Bitcoin’s Latency–Security Analysis Made Simple"
 
 - time: 12:30 - 13:30
-  info: "<br>Lunch Break<br><br>" 
+  topic: Lunch Break
 
 - time: 13:30 - 13:55
-  info: "<br><b>Maria Apostolaki</b><br>Newtwork Security For Blockchain Network<br><br>"
+  speaker: Maria Apostolaki
+  topic: Network Security For Blockchain Network
 
 - time: 13:55 - 14:20
-  info: "<br><b>Martin Zumsande</b><br>Bitcoin Core: P2P In Practice<br><br>"
+  speaker: Martin Zumsande
+  topic: Bitcoin Core - P2P In Practice
 
 - time: 14:20 - 14:45
-  info: "<br><b>Ethan Heilman</b><br>An Exploration Of Bitcoin's P2P Network And Its Security<br><br>"
+  speaker: Ethan Heilman
+  topic: An Exploration Of Bitcoin's P2P Network And Its Security
 
 - time: 14:45 - 15:05
-  info: "<br>Coffee Break<br><br>"
+  topic: Coffee Break
 
 - time: 15:05 - 15:30
-  info: "<br><b>Carla Kirk-Cohen</b><br>From Paper To Bolt<br><br>"
+  speaker: Carla Kirk-Cohen
+  topic: From Paper To Bolt
 
 - time: 15:30 - 15:55
-  info: "<br><b>Benedikt Bünz</b><br>Recent Developments In (Bitcoin Compatible) zk-SNARKs<br><br>"
+  speaker: Benedikt Bünz
+  topic: Recent Developments In (Bitcoin Compatible) zk-SNARKs
 
 - time: 15:55 - 17:30
-  info: "<br>Happy Hour<br><br>"
+  topic: Happy Hour
 

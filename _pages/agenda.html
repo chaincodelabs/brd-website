@@ -22,8 +22,16 @@ title: Tentative Agenda
             {% for agenda in site.data.agenda %}
                 <tr>
                     <td>{{ agenda.time }}</td>
-                    <td>{{ agenda.info }}</td>
-                </tr> 
+                    {% if agenda.speaker %} 
+                        {% if agenda.link %}
+                            <td><br><b><a href="/#{{ agenda.link }}"">{{ agenda.speaker }}</a></b><br>{{ agenda.topic }}<br><br></td>
+                        {% else %}
+                            <td><br><b>{{ agenda.speaker }}</b><br>{{ agenda.topic }}<br><br></td>
+                        {% endif %}
+                    {% else %}
+                        <td><br>{{ agenda.topic }}<br><br></td>
+                    {% endif %}
+                </tr>
             {% endfor %}
         </table>
     </div>
