@@ -1,24 +1,24 @@
-- time: 9:15 - 9:40
+- time: 9:00 - 9:30
   topic: Welcoming
 
-- time: 9:40 - 10:00
+- time: 9:30 - 10:00
   speaker: Sergi Delgado
   topic: Opening remarks
 
 - time: 10:00 - 10:25
-  speaker: Ittay Eyal
-  topic: Authentication
+  speaker: Maria Apostolaki
+  topic: Network Security For Blockchain Network
 
 - time: 10:25 - 10:50
-  speaker: Mark Erhardt
-  topic: From Paper To BIP
+  speaker: Martin Zumsande
+  topic: Bitcoin Core - P2P In Practice
 
-- time: 10:50 - 11:10
+- time: 10:50 - 11:15
+  speaker: Ethan Heilman
+  topic: An Exploration Of Bitcoin's P2P Network And Its Security
+
+- time: 11:15 - 11:35
   topic: Coffee Break
-
-- time: 11:10 - 11:35
-  speaker: Victor Shoup
-  topic: Fast Batched Asynchronous Distributed Key Generation
 
 - time: 11:35 - 12:00
   speaker: Pieter Wuille
@@ -28,32 +28,31 @@
   speaker: Dongning Guo and Ling Ren (Bitcoin research prize winners)
   topic: "Bitcoin’s Latency–Security Analysis Made Simple"
 
-- time: 12:30 - 13:30
+- time: 12:30 - 14:00
   topic: Lunch Break
 
-- time: 13:30 - 13:55
-  speaker: Maria Apostolaki
-  topic: Network Security For Blockchain Network
+- time: 14:00 - 14:25
+  speaker: Mark Erhardt
+  topic: From Paper To BIP
 
-- time: 13:55 - 14:20
-  speaker: Martin Zumsande
-  topic: Bitcoin Core - P2P In Practice
+- time: 14:25 - 14:50
+  speaker: Victor Shoup
+  topic: Fast Batched Asynchronous Distributed Key Generation
 
-- time: 14:20 - 14:45
-  speaker: Ethan Heilman
-  topic: An Exploration Of Bitcoin's P2P Network And Its Security
-
-- time: 14:45 - 15:05
+- time: 14:50 - 15:10
   topic: Coffee Break
 
-- time: 15:05 - 15:30
+- time: 15:10 - 15:35
   speaker: Carla Kirk-Cohen
   topic: From Paper To Bolt
 
-- time: 15:30 - 15:55
+- time: 15:35 - 16:00
   speaker: Benedikt Bünz
   topic: Recent Developments In (Bitcoin Compatible) zk-SNARKs
 
-- time: 15:55 - 17:30
-  topic: Happy Hour
+- time: 16:00 - 16:05
+  speaker: Sergi Delgado
+  topic: Closing remarks
 
+- time: 16:05 - 18:00
+  topic: Happy Hour
