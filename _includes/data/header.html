@@ -27,6 +27,15 @@
                     <li>
                         <a class="page-scroll" href={{ site.url }}{{ site.baseurl }}/#speakers>Speakers</a>
                     </li>
+                    {% if page.permalink != "/prev" %}
+                    <li>
+                        <a class="page-scroll" href={{ site.url }}{{ site.baseurl }}/prev>Previous events</a>
+                    </li>
+                    {% elsif page.permalink != "/agenda" %}
+                    <li>
+                        <a class="page-scroll" href={{ site.url }}{{ site.baseurl }}/agenda>Agenda</a>
+                    </li>
+                    {% endif %}
                     <li>
                         <a class="page-scroll" href={{ site.url }}{{ site.baseurl }}/>Home</a>
                     </li>

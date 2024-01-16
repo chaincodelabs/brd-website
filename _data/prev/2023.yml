@@ -1,0 +1,39 @@
+- name: Sergi Delgado
+  topic: Bitcoin Research Day
+  video: 
+
+- name: Maria Apostolaki
+  topic: Network Security for Blockchain networks
+  video: Grp-uzTRB2M
+
+- name: Martin Zumsande
+  topic: Bitcoin Core - P2P in practice
+  video: dWCPeiIzVco
+
+- name: Ethan Heilman
+  topic: An Exploration of Bitcoin's P2P Network and its Security
+  video: 32du0sviq0g
+
+- name: Pieter Wuille
+  topic: Cluster Mempool - Fixing Relay of Dependent Transactions
+  video: X0pLi9WH3JY
+
+- name: Dongning Guo and Ling Ren
+  topic: Bitcoin's Latency–Security Analysis Made Simple
+  video: QH-7nQU7JTQ
+
+- name: Mark Erhardt
+  topic: From paper to BIP
+  video: 7wZaL3VC2Nw
+
+- name: Victor Shoup
+  topic: Fast batched asynchronous distributed key generation
+  video: 
+
+- name: Carla Kirk-Cohen
+  topic: From paper to BOLT
+  video: l5JgXwUWAuw
+
+- name: Benedikt Bünz
+  topic: Recent developments in (Bitcoin compatible) zk-SNARKs
+  video: 6YBp1xbQV8o
