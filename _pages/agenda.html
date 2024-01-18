@@ -11,6 +11,9 @@ title: Tentative Agenda
     <div class="event black-frame">
       <h1>{{ page.title }}</h1>
         <br>
+        {% if site.data.agenda == false %}
+        <h2>AGENDA TBD</h2>
+        {% else %}
         <table class="agenda">
             <thead>
                 <tr>
@@ -18,7 +21,6 @@ title: Tentative Agenda
                     <th class="row-2 agenda-activity"><center>Activity</center></th>  
                 </tr>
             </thead>
-
             {% for agenda in site.data.agenda %}
                 <tr>
                     <td>{{ agenda.time }}</td>
@@ -34,4 +36,5 @@ title: Tentative Agenda
                 </tr>
             {% endfor %}
         </table>
+        {% endif %}
     </div>
