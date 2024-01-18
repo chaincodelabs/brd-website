@@ -1,58 +1,58 @@
-- time: 9:00 - 9:30
-  topic: Welcoming
+# - time: 9:00 - 9:30
+#   topic: Welcoming
 
-- time: 9:30 - 10:00
-  speaker: Sergi Delgado
-  topic: Opening remarks
+# - time: 9:30 - 10:00
+#   speaker: Sergi Delgado
+#   topic: Opening remarks
 
-- time: 10:00 - 10:25
-  speaker: Maria Apostolaki
-  topic: Network Security For Blockchain Network
+# - time: 10:00 - 10:25
+#   speaker: Maria Apostolaki
+#   topic: Network Security For Blockchain Network
 
-- time: 10:25 - 10:50
-  speaker: Martin Zumsande
-  topic: Bitcoin Core - P2P In Practice
+# - time: 10:25 - 10:50
+#   speaker: Martin Zumsande
+#   topic: Bitcoin Core - P2P In Practice
 
-- time: 10:50 - 11:15
-  speaker: Ethan Heilman
-  topic: An Exploration Of Bitcoin's P2P Network And Its Security
+# - time: 10:50 - 11:15
+#   speaker: Ethan Heilman
+#   topic: An Exploration Of Bitcoin's P2P Network And Its Security
 
-- time: 11:15 - 11:35
-  topic: Coffee Break
+# - time: 11:15 - 11:35
+#   topic: Coffee Break
 
-- time: 11:35 - 12:00
-  speaker: Pieter Wuille
-  topic: Cluster Mempool - Fixing Relay of Dependent Transactions
+# - time: 11:35 - 12:00
+#   speaker: Pieter Wuille
+#   topic: Cluster Mempool - Fixing Relay of Dependent Transactions
 
-- time: 12:00 - 12:30
-  speaker: Dongning Guo and Ling Ren (Bitcoin research prize winners)
-  topic: "Bitcoin’s Latency–Security Analysis Made Simple"
+# - time: 12:00 - 12:30
+#   speaker: Dongning Guo and Ling Ren (Bitcoin research prize winners)
+#   topic: "Bitcoin’s Latency–Security Analysis Made Simple"
 
-- time: 12:30 - 14:00
-  topic: Lunch Break
+# - time: 12:30 - 14:00
+#   topic: Lunch Break
 
-- time: 14:00 - 14:25
-  speaker: Mark Erhardt
-  topic: From Paper To BIP
+# - time: 14:00 - 14:25
+#   speaker: Mark Erhardt
+#   topic: From Paper To BIP
 
-- time: 14:25 - 14:50
-  speaker: Victor Shoup
-  topic: Fast Batched Asynchronous Distributed Key Generation
+# - time: 14:25 - 14:50
+#   speaker: Victor Shoup
+#   topic: Fast Batched Asynchronous Distributed Key Generation
 
-- time: 14:50 - 15:10
-  topic: Coffee Break
+# - time: 14:50 - 15:10
+#   topic: Coffee Break
 
-- time: 15:10 - 15:35
-  speaker: Carla Kirk-Cohen
-  topic: From Paper To Bolt
+# - time: 15:10 - 15:35
+#   speaker: Carla Kirk-Cohen
+#   topic: From Paper To Bolt
 
-- time: 15:35 - 16:00
-  speaker: Benedikt Bünz
-  topic: Recent Developments In (Bitcoin Compatible) zk-SNARKs
+# - time: 15:35 - 16:00
+#   speaker: Benedikt Bünz
+#   topic: Recent Developments In (Bitcoin Compatible) zk-SNARKs
 
-- time: 16:00 - 16:05
-  speaker: Sergi Delgado
-  topic: Closing remarks
+# - time: 16:00 - 16:05
+#   speaker: Sergi Delgado
+#   topic: Closing remarks
 
-- time: 16:05 - 18:00
-  topic: Happy Hour
+# - time: 16:05 - 18:00
+#   topic: Happy Hour
