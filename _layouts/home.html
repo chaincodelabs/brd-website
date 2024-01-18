@@ -13,18 +13,20 @@
         <div id="home" class="container">
             <div class="event-text">
                 <div class="event-heading">Bitcoin Research Day</div>
-                <div class="event-lead-in">27th October 2023</div>   
+                <div class="event-lead-in">Fall 2024</div>   
                 <div class="event-lead-in">Midtown NYC</div>                    
                 <a href="#event" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
     </header>
 
+    {% comment %}
     {% include data/event.html %}
     {% include data/format.html %}
     {% include data/speakers.html %}
-    {% include data/footer.html %}
     {% include data/speakers_info.html %}
+    {% endcomment %}
+    {% include data/footer.html %}
     {% include data/js.html %}
 
     </body>
