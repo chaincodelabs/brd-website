@@ -8,7 +8,12 @@
                 </div>
             </div>
             <div class="row">
-            {% for post in site.data.speakers %}
+                {% for post in site.data.speakers %}
+                {% assign mod = forloop.index0 | modulo:3 %}
+                {% if mod == 0 and forloop.first == false %}
+                </div>
+                <div class="row">
+                {% endif %}
                 <div class="col-md-4 col-sm-6 speakers-item">
                     <a href="#{{ post.name }}" class="speakers-link" data-toggle="modal">
                         <div class="speakers-hover">
@@ -23,12 +28,11 @@
                         <p class="text-muted">{{ post.subtitle }}</p>
                     </div>
                 </div>
-            {% endfor %}
-                <div class="col-md-4 col-sm-6 speakers-item">
-                </div>
+                {% endfor %}
                 <!-- Add for &more speakers-->
                 <!-- <div class="col-md-4 col-sm-6 speakers-item">
                     <img src="css/img/speaker/more.jpg" class="img-responsive img-centered" alt="more to come">
                 </div> -->
+            </div>
         </div>
     </section>
