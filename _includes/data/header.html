@@ -27,11 +27,17 @@
                     <li>
                         <a class="page-scroll" href={{ site.url }}{{ site.baseurl }}/#speakers>Speakers</a>
                     </li> -->
+                    {% if page.permalink != "/prize" %}
+                    <li>
+                        <a class="page-scroll" href={{ site.url }}{{ site.baseurl }}/prize>Research Prize</a>
+                    </li>
+                    {% endif %}
                     {% if page.permalink != "/prev" %}
                     <li>
                         <a class="page-scroll" href={{ site.url }}{{ site.baseurl }}/prev>Previous events</a>
                     </li>
-                    {% elsif page.permalink != "/agenda" %}
+                    {% endif %}
+                    {% if page.permalink != "/agenda" %}
                     <li>
                         <a class="page-scroll" href={{ site.url }}{{ site.baseurl }}/agenda>Agenda</a>
                     </li>
