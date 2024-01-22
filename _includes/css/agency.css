@@ -168,6 +168,7 @@ fieldset[disabled] .btn-primary.active {
     padding: 20px 40px;
     font-size: 18px;
     font-weight: 700;
+    white-space: normal
 }
 
 .btn-sm {
