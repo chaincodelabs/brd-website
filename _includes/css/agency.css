@@ -76,6 +76,10 @@ a.active {
     color: #{{ site.data.template.color.secondary }};
 }
 
+h3.author {
+    text-align: right;
+}
+
 h1,
 h2,
 h3,
@@ -151,6 +155,10 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
     border-color: #{{ site.data.template.color.primary }};
     background-color: #{{ site.data.template.color.primary }};
+}
+
+.h2-collapsed:hover {
+    color: #{{ site.data.template.color.secondary }};
 }
 
 .btn-prev {
@@ -868,6 +876,11 @@ ul.social-buttons li a:active {
 .btn.active,
 .btn:active:focus {
     outline: 0;
+}
+
+.no-shadow {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .portfolio-modal .modal-content {
