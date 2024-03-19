@@ -11,45 +11,45 @@ title: Previous Events
 <div class="event black-frame">
     <h1>{{ page.title }}</h1>
     <br>
-    <div class="panel-group" id="accordion">
+    <div class="accordion" id="previous-events">
+        <div class="panel no-shadow">
         {% for edition in site.data.prev %}
         {% assign date = edition[0] %}
         {% assign data = edition[1] %}
-        <div class="panel">
             <div class="panel-heading">
-                <button class="btn btn-prev" type="button" data-toggle="collapse" data-target="#{{ date }}" data-parent="#accordion" aria-expanded="false" aria-controls="{{ date }}">{{ date }}</button>
+                <button class="btn btn-prev" type="button" data-parent="#previous-events" data-toggle="collapse" data-target="#{{ date }}" aria-expanded="false" aria-controls="{{ date }}">{{ date }}</button>
             </div>
             {% if forloop.first %}
             <div id="{{ date }}" class="panel-collapse collapse in">
             {% else %}
             <div id="{{ date }}" class="panel-collapse collapse">
             {% endif %}
-            <div class="panel-body"></div>
-                <div class="row">
-                    {% assign i = 0 %}
-                    {% for speaker in data %}
-                    {% if speaker.video %}
-                        {% assign mod = i | modulo:3 %}
-                        {% if mod == 0 and i > 0 %}
-                        </div>
-                        <div class="row">
+                <div class="panel-body">
+                    <div class="row">
+                        {% assign i = 0 %}
+                        {% for speaker in data %}
+                        {% if speaker.video %}
+                            {% assign mod = i | modulo:3 %}
+                            {% if mod == 0 and i > 0 %}
+                            </div>
+                            <div class="row">
+                            {% endif %}
+                            <div class="col-md-4 col-sm-6 speakers-item speaker-prev">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/{{ speaker.video }}" title="{{ speaker.topic }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                                </div>
+                                <div style="text-align: center;">
+                                    <h4>{{ speaker.name }}</h4>
+                                    {{ speaker.topic }}
+                                </div>
+                            </div>
+                            {% assign i = i|plus:1 %}
                         {% endif %}
-                        <div class="col-md-4 col-sm-6 speakers-item speaker-prev">
-                            <div class="video-container">
-                                <iframe src="https://www.youtube-nocookie.com/embed/{{ speaker.video }}" title="{{ speaker.topic }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-                            </div>
-                            <div style="text-align: center;">
-                                <h4>{{ speaker.name }}</h4>
-                                {{ speaker.topic }}
-                            </div>
-                        </div>
-                        {% assign i = i|plus:1 %}
-                    {% endif %}
-                    {% endfor %}
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-        </div>
         {% endfor %}
         </div>
+    </div>
 </div>
