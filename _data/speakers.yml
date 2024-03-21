@@ -1,73 +1,63 @@
-- title: Victor Shoup
-  name: vshoup
-  subtitle: DFINITY/NYU
-  img: vshoup.jpg
-  thumbnail: vshoup.jpg
-  bio: "Victor is a computer scientist and mathematician working in the areas of cryptography and computer algebra. He is currently a Principal Researcher at DFINITY and Professor Emeritus of Computer Science at NYU. His previous roles include: Visiting Research Scientist, IBM TJ Watson Research Center; Research Scientist, IBM Research, Zurich; and Research Scientist, Bellcore"
-  topic: Fast batched asynchronous distributed key generation
+- name: Giulia Fanti
+  id: gfanti
+  affiliation: Carnegie Mellon University
+  img: gfanti.jpg
+  bio: Giulia Fanti is an Assistant Professor of Electrical and Computer Engineering at Carnegie Mellon University. Her research interests span the security, privacy, and efficiency of distributed systems. She is a two-time fellow of the World Economic Forum’s Global Future Council on Cybersecurity and a member of NIST’s Information Security and Privacy Advisory Board. Her work has been recognized with several awards, including best paper awards, a Sloan Fellowship, an Intel Rising Star Faculty Award, and an ACM SIGMETRICS Rising Star Award. She obtained her Ph.D. in EECS from U.C. Berkeley and her B.S. in ECE from Olin College of Engineering
+  topic: Strategic Latency Reduction in Blockchain Peer-to-Peer Networks
+  abstract: Most permissionless blockchain networks run on peer-to-peer (P2P) networks, which offer flexibility and decentralization at the expense of performance (e.g., network latency). Historically, this tradeoff has not been a bottleneck for most blockchains. However, an emerging host of blockchain-based applications (e.g., decentralized finance) are increasingly sensitive to latency; users who can reduce their network latency relative to other users can accrue (sometimes significant) financial gains. In this work, we initiate the study of strategic latency reduction in blockchain P2P networks. We first define two classes of latency that are of interest in blockchain applications. We then show empirically that a strategic agent who controls only their local peering decisions can manipulate both types of latency, achieving 60% of the global latency gains provided by the centralized, paid service bloXroute, or, in targeted scenarios, comparable gains. Finally, we show that our results are not due to the poor design of existing P2P networks. Under a simple network model, we theoretically prove that an adversary can always manipulate the P2P network’s latency to their advantage, provided the network experiences sufficient peer churn and transaction activity
 
-- title: Benedikt Bünz
-  name: bbunz
-  subtitle: Espresso Systems/NYU
-  img: bbunz.jpg
-  thumbnail: bbunz.jpg
-  description: Benedikt is an assistant professor at the NYU Courant Institute. He works on applied cryptography with a special focus on Blockchains. His research includes several innovations that have been relevant or applied to Bitcoin, including Bulletproofs (a zero-knowledge proof useful for Confidential Transactions), Flyclient (a protocol for ultra-light PoW clients), and VDFs, a new primitive that is useful for building unbiasable randomness beacons
-  topic: Recent developments in (Bitcoin compatible) zk-SNARKs
+- name: Josie Baker
+  id: jbaker
+  affiliation: Bitcoin Core
+  img: jbaker.jpg
+  bio: Bitcoin Core contributor by day, privacy enthusiast by night. Particularly interested in the overlap of privacy and usability
+  topic: "The devil in the details: combining cryptographic protocols"
+  abstract:
 
-- title: Ethan Heilman
-  name: eheilman
-  subtitle: BastionZero
-  img: eheilman.jpg
-  thumbnail: eheilman.jpg
-  bio: Ethan is CTO and Co-Founder of BastionZero. He has a PhD in Computer Science from Boston University and is the author of over 10 technical papers on cryptocurrency, blockchain, cryptography and network security. He is the inventor of the TumbleBit protocol and has contributed to Bitcoin Core. In his spare time, he enjoys breaking hash functions
-  topic: An Exploration of Bitcoin's P2P Network and its Security
-  abstract: Why is Bitcoin's P2P network important to Bitcoin's security? How might it be attacked and what would be the impact to Bitcoin's security?  This talk will address these questions by describing these attacks, providing a primer on Bitcoin Core's P2P architecture and providing a brief history of how the design of Bitcoin Core has evolved to better address these threats
+- name: Tim Ruffing
+  id: truffing
+  affiliation: Blockstream Research
+  img: truffing.jpg
+  bio:  Tim is an applied cryptographer in the research team of Blockstream, a Bitcoin and blockchain technology company. He obtained his PhD from Saarland University, researching cryptographic aspects of cryptocurrencies. His current research focuses on advanced applications of Schnorr signatures, e.g., multisignatures and threshold signatures. Tim also serves a co-maintainer of libsecp256k1, the cryptographic open-source library used in Bitcoin Core
+  topic: "No More Guesswork: Ready-to-Use Distributed Key Generation for FROST"
+  abstract: Threshold signature schemes such as FROST are gaining considerable attention in Bitcoin. Yet, Distributed Key Generation (DKG), with its heavy requirements on the underlying communication mechanisms such as secure channels and a secure broadcast mechanism, remains the Achilles heel of threshold signatures and holds back their deployment in the real world.
+            <br>
+            In this talk, we will first take a detailed look at the obstacles that implementers and practitioners face in practice. We will foster an understanding of potential pitfalls and attacks, in particular those that can arise from the (mis)use of reliable broadcast protocols. We will then provide recommendations and guidelines on how to avoid these pitfalls and implement broadcast securely in practice. A key technical ingredient in our recommendations is a simple extension of the Goldwasser-Bellare echo broadcast protocol, which we have not seen proposed in the context of DKG so far.
+            <br>
+            With these learnings in mind, we present ChillDKG, a DKG protocol that fully incorporates minimal but sufficient implementations of secure channels and reliable broadcast, and thereby hides this complexity from engineers entirely. The protocol addresses further practical problems by eliminating the need for fresh randomness per threshold setup and offering a practical solution for backups. To facilitate real-world adoption of ChillDKG, we have been working on a publicly available specification that aims to be comprehensive and easy to use
 
-- title: Ittay Eyal
-  name: ieyal
-  subtitle: Technion/IC3
-  img: ieyal.jpg
-  thumbnail: ieyal.jpg
-  bio: Ittay is an Associate Professor in the Electrical and Computer Engineering Faculty at the Technion and an Associate Director at the Initiative for Cryptocurrencies and Contracts (IC3). Eyal completed his PhD at the Technion, followed by a postdoctoral fellowship at Cornell University. He was awarded a 2018 Alon Fellowship and a 2022 Krill Prize. His research focuses on performance and security in decentralized systems
-  topic: Authentication
-  abstract: Client-side security is both more challenging and more critical in decentralized systems, as there is no trusted party that can replace lost credentials or revert token theft. Despite its significance, the design of authentication mechanisms—referred to as "wallets" in this context—remains an open question. We define the authentication problem, establish bounds and optimal mechanisms, and derive concrete improvement proposals for existing wallets and systems
+- name: Jonas Nick
+  id: jnick
+  affiliation: Blockstream Research
+  img: jnick.jpg
+  bio:  Jonas Nick is a researcher in the field of Bitcoin, working as part of Blockstream's research team. He has made contributions to the Bitcoin community through his involvement in co-authoring various Bitcoin Improvement Proposals (BIPs), including the Taproot BIPs. Additionally, Jonas has collaborated on several scientific publications in cryptography, such as MuSig2 and Bulletproofs++ and contributes to the secp256k1 cryptographic library
+  topic: "No More Guesswork: Ready-to-Use Distributed Key Generation for FROST"
+  abstract: Threshold signature schemes such as FROST are gaining considerable attention in Bitcoin. Yet, Distributed Key Generation (DKG), with its heavy requirements on the underlying communication mechanisms such as secure channels and a secure broadcast mechanism, remains the Achilles heel of threshold signatures and holds back their deployment in the real world.
+            <br>
+            In this talk, we will first take a detailed look at the obstacles that implementers and practitioners face in practice. We will foster an understanding of potential pitfalls and attacks, in particular those that can arise from the (mis)use of reliable broadcast protocols. We will then provide recommendations and guidelines on how to avoid these pitfalls and implement broadcast securely in practice. A key technical ingredient in our recommendations is a simple extension of the Goldwasser-Bellare echo broadcast protocol, which we have not seen proposed in the context of DKG so far.
+            <br>
+            With these learnings in mind, we present ChillDKG, a DKG protocol that fully incorporates minimal but sufficient implementations of secure channels and reliable broadcast, and thereby hides this complexity from engineers entirely. The protocol addresses further practical problems by eliminating the need for fresh randomness per threshold setup and offering a practical solution for backups. To facilitate real-world adoption of ChillDKG, we have been working on a publicly available specification that aims to be comprehensive and easy to use
 
-- title: Maria Apostolaki
-  name: mapostolaki
-  subtitle: Princeton
-  img: mapostolaki.jpg
-  thumbnail: mapostolaki.jpg
-  bio: Maria is an Assistant Professor of Electrical and Computer Engineering at Princeton University. Her research spans the fields of networking, security, and blockchain. She has uncovered network routing vulnerabilities on blockchain systems and has worked towards designing mitigation mechanisms. Maria has been named a rising star in Computer Networking and Communications, and she was the recipient of the Google Research Scholar Award, as well as the IETF/IRTF Applied Networking Research Prize. Maria completed her PhD in 2021 at ETH Zurich. After receiving her PhD, she spent a year at Carnegie Mellon University, working as a postdoctoral researcher. Prior to her PhD, she earned her diploma in Electrical and Computer Engineering at the National Technical University of Athens, Greece
-  topic: Network Security for Blockchain networks
+- name: Hannes Hartenstein
+  id: hhartenstein
+  affiliation: Karlsruhe Institute of Technology
+  img: hhartenstein.jpg
+  bio: Hannes Hartenstein is a professor for computer science at Karlsruhe Institute of Technology (KIT) in Karlsruhe, Germany, since 2003. He is heading a research group on decentralized systems and network services at KIT’s Institute of Information Security and Dependability (KASTEL)
+  topic: "From Monitoring Bitcoin to Verifying Lightning: Modeling Aspects of the Bitcoin Universe"
+  abstract: We are monitoring the Bitcoin peer-to-peer network since 2015 and will report on some interesting observations and findings. Over the last years, this longitudinal monitoring study shows that the Bitcoin network is remarkably stable. However, we could also observe singular events that gave unique insights into the network's structure. We discuss what we know and what we do not know about the actual Bitcoin network and the corresponding quality of Bitcoin network models. Furthermore, we examine how to prove Lightning secure by formally modeling payment channels, assess the compatibility of corresponding first and second layer models, and close with some future research directions
 
-- title: Carla Kirk-Cohen
-  name: ckirkcohen
-  subtitle: Chaincode Labs
-  img: ckirkcohen.jpg
-  thumbnail: ckirkcohen.jpg
-  bio: Carla is a software engineer working on the implementation and improvement of the Lightning Network specification at Chaincode Labs. Her current focus is on the specification of mitigation against "channel jamming" denial of service attacks against the lightning network. She previously worked at Lightning Labs, where she worked on reliability improvements to LND and led the Lightning Loop submarine swap team
-  topic: From paper to BOLT
+- name: Matthias Grundmann
+  id: mgrundmann
+  affiliation: Karlsruhe Institute of Technology
+  img: mgrundmann.jpg
+  bio: Matthias Grundmann is a doctoral researcher at KIT. His research focuses on ways to better understand and improve the P2P network layer of Bitcoin as well as evaluating and improving payment channel networks as a second layer for blockchains
+  topic: "From Monitoring Bitcoin to Verifying Lightning: Modeling Aspects of the Bitcoin Universe"
+  abstract: We are monitoring the Bitcoin peer-to-peer network since 2015 and will report on some interesting observations and findings. Over the last years, this longitudinal monitoring study shows that the Bitcoin network is remarkably stable. However, we could also observe singular events that gave unique insights into the network's structure. We discuss what we know and what we do not know about the actual Bitcoin network and the corresponding quality of Bitcoin network models. Furthermore, we examine how to prove Lightning secure by formally modeling payment channels, assess the compatibility of corresponding first and second layer models, and close with some future research directions
 
-- title: Mark Erhardt
-  name: merhardt
-  subtitle: Chaincode Labs
-  img: merhardt.jpg
-  thumbnail: merhardt.jpg
-  bio: Mark enjoys research and development on Bitcoin, especially wallets and UTXO management. He wrote his thesis on Coin Selection, helps organize Bitcoin meetups, and is an avid contributor to Bitcoin Stack Exchange. Previously, Mark tweaked the blockchain footprint of enterprise wallets at BitGo
-  topic: From paper to BIP
-
-- title: Martin Zumsande
-  name: mzumsande
-  subtitle: Chaincode Labs
-  img: mzumsande.jpg
-  thumbnail: mzumsande.jpg
-  bio: Martin started contributing to Bitcoin Core in 2019 and switched to full-time in late 2021. His main interest is in the peer-to-peer network of Bitcoin, in particular address relay. Before discovering Bitcoin, he received a PhD in physics and worked as a consultant in the banking industry
-  topic: Bitcoin Core - P2P in practice
-
-- title: Pieter Wuille
-  name: pwuille
-  subtitle: Chaincode Labs
-  img: pwuille.jpg
-  thumbnail: pwuille.jpg
-  bio: Pieter discovered Bitcoin in December 2010 and started contributing code to the project in May 2011. Since then, he has written significant parts of the reference client's code, in particular, to improve performance and code organization. In addition to authoring and co-authoring 16 Bitcoin Improvement Proposals, Pieter contributed to the design of Miniscript, and co-authored papers on MuSig and Bulletproof, and contributed to libraries like libsecp256k1, ctaes, and minisketch. Before Chaincode, Pieter was a co-founder and Core Engineer at Blockstream and worked as a Site Reliability Engineer at Google. Pieter received his Ph.D. in Computer Science at the University of Leuven, where he focused on programming language design. In his free time, Pieter likes climbing and playing board games
-  topic: Cluster Mempool - Fixing Relay of Dependent Transactions
+- name: Sarah Meiklejohn
+  id: smeiklejohn
+  affiliation: University College London
+  img: smeiklejohn.jpg
+  bio: Sarah Meiklejohn is a Professor in Cryptography and Security at University College London and a Research Scientist at Google, where she works on security, transparency, and anti-abuse measures
+  topic: De-Anonymization in Bitcoin
+  abstract: There are many heuristics that are used in practice to de-anonymize Bitcoin and other cryptocurrencies, but it is often hard to assess their effectiveness given a lack of ground-truth data.  This talk presents an overview of these heuristics, as well as new research to both improve them and increase our confidence in their results

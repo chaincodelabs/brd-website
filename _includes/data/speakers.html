@@ -8,31 +8,33 @@
                 </div>
             </div>
             <div class="row">
-                {% for post in site.data.speakers %}
+                {% for speaker in site.data.speakers %}
                 {% assign mod = forloop.index0 | modulo:3 %}
                 {% if mod == 0 and forloop.first == false %}
                 </div>
                 <div class="row">
                 {% endif %}
                 <div class="col-md-4 col-sm-6 speakers-item">
-                    <a href="#{{ post.name }}" class="speakers-link" data-toggle="modal">
+                    <a href="#{{ speaker.id }}" class="speakers-link" data-toggle="modal">
                         <div class="speakers-hover">
                             <div class="speakers-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="css/img/speaker/{{ post.thumbnail }}" class="img-responsive img-centered" alt="Picture of {{ post.title }}">
+                        <img src="css/img/speaker/{{ speaker.img }}" class="img-responsive img-centered" alt="Picture of {{ speaker.name }}">
                     </a>
                     <div class="speakers-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.subtitle }}</p>
+                        <h4>{{ speaker.name }}</h4>
+                        <p class="text-muted">{{ speaker.affiliation }}</p>
                     </div>
                 </div>
                 {% endfor %}
                 <!-- Add for &more speakers-->
                 <!-- <div class="col-md-4 col-sm-6 speakers-item">
-                    <img src="css/img/speaker/more.jpg" class="img-responsive img-centered" alt="more to come">
                 </div> -->
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <img src="css/img/speaker/more.jpg" class="img-responsive img-centered" alt="more to come">
+                </div>
             </div>
         </div>
     </section>
