@@ -24,6 +24,7 @@ title: Previous Events
             {% else %}
             <div id="{{ date }}" class="panel-collapse collapse">
             {% endif %}
+            <ul>
                 <div class="panel-body">
                     <div class="row">
                         {% assign i = 0 %}
@@ -49,6 +50,7 @@ title: Previous Events
                     </div>
                 </div>
             </div>
+        </ul>
         {% endfor %}
         </div>
     </div>
