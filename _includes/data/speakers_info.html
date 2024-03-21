@@ -1,6 +1,6 @@
 <!-- Speakers Info Section -->
-    {% for post in site.data.speakers %}
-        <div class="portfolio-modal modal fade" id="{{ post.name }}" tabindex="-1" role="dialog" aria-hidden="true">
+    {% for speaker in site.data.speakers %}
+        <div class="portfolio-modal modal fade" id="{{ speaker.id }}" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -12,13 +12,13 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>{{ post.title }}</h2>
+                                <h2>{{ speaker.name }}</h2>
                                 <hr class="star-primary">
-                                <img src="css/img/speaker/{{ post.img }}" class="img-responsive img-centered speakers-info" alt="Picture of {{ post.title }}">
+                                <img src="css/img/speaker/{{ speaker.img }}" class="img-responsive img-centered speakers-info" alt="Picture of {{ speaker.name }}">
                                 <h3>Bio</h3>
-                                <p>{{ post.bio }}</p>
-                                <h3>Topic: {{ post.topic }}</h3>
-                                <p>{{ post.abstract }}</p>
+                                <p>{{ speaker.bio }}</p>
+                                <h3>Topic: {{ speaker.topic }}</h3>
+                                <p>{{ speaker.abstract }}</p>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
                         </div>
