@@ -58,4 +58,29 @@ title: Bitcoin Research Prize
                 <a href="https://forms.gle/5BV9UpCqjrn146ez5" class="page-scroll btn btn-xl" target="_blank">Submit your nominations here</a>
             </div>
         </div>
+        <br>
+        <br>
+        <h1>Previous editions</h1>
+        <br>
+        <div class="accordion" id="previous-prizes">
+            <div class="panel no-shadow">
+            {% for edition in site.data.prizes %}
+            <button class="btn btn-prev" type="button" data-parent="#previous-prizes" data-toggle="collapse" data-target="#{{ edition.year }}" aria-expanded="false" aria-controls="{{ edition.year }}">{{ edition.year }}</button>
+            {% if forloop.first %}
+            <div id="{{ edition.year }}" class="panel-collapse collapse in">
+            {% else %}
+            <div id="{{ edition.year }}" class="panel-collapse collapse">
+            {% endif %}
+                <ul>
+                    <h3>Prize Committee</h3>
+                    {% for member in edition.committee %}
+                    <ol> {{ member[0] }} ({{ member[1] }})</ol>
+                    {% endfor %}
+                    <h3>Prize Winner</h3>
+                    <ol>{{ edition.winners[0] }} by <b>{{ edition.winners[1] }}</b></ol>
+                </ul>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
     </div>
