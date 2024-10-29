@@ -18,20 +18,25 @@ title: Tentative Agenda
             <thead>
                 <tr>
                     <th class="row-1 agenda-time"><center>Time</center></th>
-                    <th class="row-2 agenda-activity"><center>Activity</center></th>  
+                    <th class="row-2 agenda-activity"><center>Activity</center></th>
                 </tr>
             </thead>
             {% for agenda in site.data.agenda %}
                 <tr>
                     <td>{{ agenda.time }}</td>
-                    {% if agenda.speaker %} 
-                        {% if agenda.link %}
-                            <td><br><b><a href="/#{{ agenda.link }}"">{{ agenda.speaker }}</a></b><br>{{ agenda.topic }}<br><br></td>
-                        {% else %}
-                            <td><br><b>{{ agenda.speaker }}</b><br>{{ agenda.topic }}<br><br></td>
-                        {% endif %}
+                    {% if agenda.speaker.first %}
+                        <td>
+                        {% for item in agenda.speaker %}
+                            <br><b>{{ item }}</b><br>{{ agenda.topic[forloop.index0] }}<br>
+                        {% endfor %}
+                        <br>
+                        </td>
                     {% else %}
-                        <td><br>{{ agenda.topic }}<br><br></td>
+                        {% if agenda.speaker %}
+                            <td><br><b>{{ agenda.speaker }}</b><br>{{ agenda.topic }}<br><br></td>
+                        {% else %}
+                            <td><br>{{ agenda.topic }}<br><br></td>
+                        {% endif %}
                     {% endif %}
                 </tr>
             {% endfor %}
