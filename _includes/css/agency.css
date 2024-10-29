@@ -66,7 +66,8 @@ a.active {
 }
 
 a {
-    color: #{{ site.data.template.color.primary }};
+    color: black;
+    font-weight: bold;
 }
 
 a:hover,
@@ -162,8 +163,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-prev {
-    background: #00283c; 
-    color: white; 
+    background: #00283c;
+    color: white;
     letter-spacing: 1px;
 }
 
@@ -385,7 +386,7 @@ header .event-text .event-heading {
     line-height: 40px;
 }
 
-@media(min-width:768px) {    
+@media(min-width:768px) {
     header .event-text {
         padding-top: 300px;
         padding-bottom: 200px;
