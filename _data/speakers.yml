@@ -14,17 +14,13 @@
   topic: "The devil in the details: combining cryptographic protocols"
   abstract:
 
-- name: Tim Ruffing
-  id: truffing
-  affiliation: Blockstream Research
-  img: truffing.jpg
-  bio:  Tim is an applied cryptographer in the research team of Blockstream, a Bitcoin and blockchain technology company. He obtained his PhD from Saarland University, researching cryptographic aspects of cryptocurrencies. His current research focuses on advanced applications of Schnorr signatures, e.g., multisignatures and threshold signatures. Tim also serves a co-maintainer of libsecp256k1, the cryptographic open-source library used in Bitcoin Core
-  topic: "No More Guesswork: Ready-to-Use Distributed Key Generation for FROST"
-  abstract: Threshold signature schemes such as FROST are gaining considerable attention in Bitcoin. Yet, Distributed Key Generation (DKG), with its heavy requirements on the underlying communication mechanisms such as secure channels and a secure broadcast mechanism, remains the Achilles heel of threshold signatures and holds back their deployment in the real world.
-            <br>
-            In this talk, we will first take a detailed look at the obstacles that implementers and practitioners face in practice. We will foster an understanding of potential pitfalls and attacks, in particular those that can arise from the (mis)use of reliable broadcast protocols. We will then provide recommendations and guidelines on how to avoid these pitfalls and implement broadcast securely in practice. A key technical ingredient in our recommendations is a simple extension of the Goldwasser-Bellare echo broadcast protocol, which we have not seen proposed in the context of DKG so far.
-            <br>
-            With these learnings in mind, we present ChillDKG, a DKG protocol that fully incorporates minimal but sufficient implementations of secure channels and reliable broadcast, and thereby hides this complexity from engineers entirely. The protocol addresses further practical problems by eliminating the need for fresh randomness per threshold setup and offering a practical solution for backups. To facilitate real-world adoption of ChillDKG, we have been working on a publicly available specification that aims to be comprehensive and easy to use
+- name: Chelsea Komlo
+  id: ckomlo
+  affiliation: University of Waterloo, SandboxAQ
+  img: ckomlo.jpg
+  bio:  Chelsea is a cryptography and privacy researcher. She is currently a member of the Cryptography, Security, and Privacy lab at the University of Waterloo, and a Staff Research Scientist at SandboxAQ. Previously, she served as Chief Scientist at the Zcash Foundation. Before moving into cryptography research, she worked as an engineer on open-source security and privacy related projects, including Tor, Enigmail, and the Off-The-Record (OTR) messaging protocol
+  topic:
+  abstract:
 
 - name: Jonas Nick
   id: jnick
