@@ -1,4 +1,4 @@
-- inverted: 
+- inverted:
   img: icon-ltalks.jpg
   name: Research talks
   info: Leading researchers will present contemporary theoretical work. Followed by discussion and open problems
@@ -8,17 +8,17 @@
   name: Development challenges
   info: Solutions implemented in Bitcoin and in the Lightning Network will be presented by the developers leading them. Possible next steps and practical wish lists will be stated and discussed
 
-- inverted: 
-  img: icon-stalks.jpg
-  name: Lightning talks
-  info: Short talks by PhD students and early-stage developers, in which they introduce a topic they are working on
+# - inverted:
+#   img: icon-stalks.jpg
+#   name: Lightning talks
+#   info: Short talks by PhD students and early-stage developers, in which they introduce a topic they are working on
 
-- inverted: timeline-inverted
+- inverted:
   img: icon-prize.jpg
   name: Bitcoin Research Prize Ceremony
   info: An announcement of the winner and the runner-ups, followed by a presentation of the winner
 
-- inverted: 
+- inverted: timeline-inverted
   img: icon-happy-hour.jpg
   name: Happy Hour
   info: Drinks, snacks, and even more chatting!
