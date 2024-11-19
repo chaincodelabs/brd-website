@@ -7,7 +7,7 @@
 
 - time: 10:15 - 11:20
   speaker: [Sarah Meiklejohn, Jonas Nick, Josie Baker]
-  topic: [De-anonymization in Bitcoin, Ready-to-Use Distributed Key Generation for FROST, Combining Cryptographic Protocols]
+  topic: [De-anonymization in Bitcoin, Privacy and Scaling with zk-SNARKs and Client-Side Validation, Combining Cryptographic Protocols]
 
 - time: 11:20 - 11:40
   topic: Coffee Break
