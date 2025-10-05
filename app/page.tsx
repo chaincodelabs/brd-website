@@ -1,3 +1,5 @@
+import MarkdownContent from '../content/markdown.mdx'
+
 const headerMenu = [
   {
     name: 'Event',
@@ -42,6 +44,12 @@ export default function Home() {
           <h2>Bringing together researchers and developers</h2>
           <p>Bitcoin Research Day is a day dedicated to academic research that benefits Bitcoin, with the goal of bring together researchers and developers. The event will consist of talks and open discussions on cryptography, P2P networks, and more.</p>
           <a href="/">Sign Up</a>
+        </div>
+        
+        {/* MDX Content Section */}
+        <div id="markdown-content">
+          <h2>Additional Content</h2>
+          <MarkdownContent />
         </div>
       </main>
     </div>
