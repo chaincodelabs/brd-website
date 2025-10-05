@@ -1,4 +1,5 @@
 import MarkdownContent from '../content/markdown.mdx'
+import HeroContent from '../content/hero.mdx'
 
 const headerMenu = [
   {
@@ -34,11 +35,9 @@ export default function Home() {
         </ul>
       </header>
       <main>
+
         <div id="hero">
-          <h1>Bitcoin Research Day</h1>
-          <p>November 6, 2025</p>
-          <p>Bitcoin Research Day is a day dedicated to academic research that benefits Bitcoin.</p>
-          <a href="/">Sign Up</a>
+          <HeroContent />
         </div>
         <div id="description">
           <h2>Bringing together researchers and developers</h2>
