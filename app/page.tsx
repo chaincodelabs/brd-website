@@ -1,7 +1,35 @@
-import MarkdownContent from '../content/markdown.mdx'
 import HeroContent from '../content/hero.mdx'
+import AboutContent from '@/content/about.mdx'
+import FormatContent from '@/content/format.mdx'
+import PrizeContent from '@/content/prize.mdx'
+import AgendaContent from '@/content/agenda.mdx'
+import FAQContent from '@/content/faq.mdx'
+import FinalMessageContent from '@/content/final-message.mdx'
 
 const headerMenu = [
+  {
+    name: 'Event',
+    uri: '/#event'
+  },
+  {
+    name: 'Format',
+    uri: '/#format'
+  },
+  {
+    name: 'Research Prize',
+    uri: '/#prize'
+  },
+  {
+    name: 'Agenda',
+    uri: '/#agenda'
+  }
+]
+
+const footerMenu = [
+  {
+    name: 'Home',
+    uri: '/'
+  },
   {
     name: 'Event',
     uri: '/#event'
@@ -35,22 +63,37 @@ export default function Home() {
         </ul>
       </header>
       <main>
-
         <div id="hero">
           <HeroContent />
         </div>
-        <div id="description">
-          <h2>Bringing together researchers and developers</h2>
-          <p>Bitcoin Research Day is a day dedicated to academic research that benefits Bitcoin, with the goal of bring together researchers and developers. The event will consist of talks and open discussions on cryptography, P2P networks, and more.</p>
-          <a href="/">Sign Up</a>
+        <div id="about">
+          <AboutContent />
         </div>
-        
-        {/* MDX Content Section */}
-        <div id="markdown-content">
-          <h2>Additional Content</h2>
-          <MarkdownContent />
+        <div id="format">
+          <FormatContent />
+        </div>
+        <div id="prize">
+          <PrizeContent />
+        </div>
+        <div id="agenda">
+          <AgendaContent />
+        </div>
+        <div id="faq">
+          <FAQContent />
+        </div>
+        <div id="final-message">
+          <FinalMessageContent />
         </div>
       </main>
+      <footer>
+        <ul>
+          {footerMenu.map((item, index) => (
+            <li key={index}>
+              <a href={item.uri}>{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </footer>
     </div>
   );
 }
