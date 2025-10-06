@@ -16,7 +16,7 @@ export default function Pill(props:PillProps){
         }
     }
 
-    const styling = `${bgColor} rounded-full px-4 py-2 font-sans !text-white text-nowrap`
+    const styling = `${bgColor} text-base rounded-full px-4 py-2 font-sans !text-white text-nowrap`
 
     if(props.uri) {
         return(
