@@ -5,6 +5,7 @@ import PrizeContent from '@/content/prize.mdx'
 import AgendaContent from '@/content/agenda.mdx'
 import FAQContent from '@/content/faq.mdx'
 import FinalMessageContent from '@/content/final-message.mdx'
+import Header from '@/components/Header'
 
 const headerMenu = [
   {
@@ -50,18 +51,8 @@ const footerMenu = [
 
 export default function Home() {
   return (
-    <div className="">
-      <header>
-        <a href="/">BRD25</a>
-        <p>Midtown NYC / Chaincode Labs</p>
-        <ul>
-          {headerMenu.map((item, index) => (
-            <li key={index}>
-              <a href={item.uri}>{item.name}</a>
-            </li>
-          ))}
-        </ul>
-      </header>
+    <div className="bg-slate-900">
+      <Header />
       <main>
         <div id="hero">
           <HeroContent />
