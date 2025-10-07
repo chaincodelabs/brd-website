@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <div className="bg-slate-900">
       <Header />
-      <main>
+      <main className="p-6">
         <div id="hero">
           <HeroContent />
         </div>
@@ -76,11 +76,11 @@ export default function Home() {
           <FinalMessageContent />
         </div>
       </main>
-      <footer>
-        <ul>
+      <footer className="p-6">
+        <ul className="md:flex md:flex-row gap-4 w-full justify-between">
           {footerMenu.map((item, index) => (
             <li key={index}>
-              <a href={item.uri}>{item.name}</a>
+              <a href={item.uri} className="font-sans !text-white uppercase !no-underline py-1 block">{item.name}</a>
             </li>
           ))}
         </ul>
