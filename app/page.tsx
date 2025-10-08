@@ -45,9 +45,8 @@ export default function Home() {
             <AboutContent />
           </div>
         </div>
-        <div id="format">
+        <div id="format" className="flex flex-col gap-6 py-20 pb-0">
           <FormatContent />
-          <FormatItem title="Test" description="sfdsdfsdf" />
         </div>
         <div id="prize" className="py-6 md:py-16 lg:py-30 flex flex-col gap-6">
           <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center items-center">
