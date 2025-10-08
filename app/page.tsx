@@ -46,8 +46,22 @@ export default function Home() {
         <div id="format">
           <FormatContent />
         </div>
-        <div id="prize">
-          <PrizeContent />
+        <div id="prize" className="py-6 md:py-16 lg:py-30 flex flex-col gap-6">
+          <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center items-center">
+            <PrizeContent />
+          </div>
+          <picture className="w-full h-auto max-w-7xl mx-auto block">
+            <source 
+              media="(min-width: 768px)" 
+              srcSet="/bitcoin-research-prize@2x.png 2x, /bitcoin-research-prize.png 1x"
+            />
+            <img 
+              src="/bitcoin-research-prize.png" 
+              srcSet="/bitcoin-research-prize@2x.png 2x"
+              alt="Bitcoin Research Prize" 
+              className="w-full h-auto"
+            />
+          </picture>
         </div>
         <div id="agenda">
           <AgendaContent />
