@@ -7,25 +7,6 @@ import FAQContent from '@/content/faq.mdx'
 import FinalMessageContent from '@/content/final-message.mdx'
 import Header from '@/components/Header'
 
-const headerMenu = [
-  {
-    name: 'Event',
-    uri: '/#event'
-  },
-  {
-    name: 'Format',
-    uri: '/#format'
-  },
-  {
-    name: 'Research Prize',
-    uri: '/#prize'
-  },
-  {
-    name: 'Agenda',
-    uri: '/#agenda'
-  }
-]
-
 const footerMenu = [
   {
     name: 'Home',
@@ -54,7 +35,7 @@ export default function Home() {
     <div className="bg-slate-900">
       <Header />
       <main className="p-6">
-        <div id="hero">
+        <div id="hero" className="flex flex-col gap-6">
           <HeroContent />
         </div>
         <div id="about">

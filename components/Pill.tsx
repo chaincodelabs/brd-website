@@ -5,14 +5,16 @@ interface PillProps {
 }
 
 export default function Pill(props:PillProps){
-    let bgColor = "bg-black/75";
+    let bgColor = "bg-black/85";
 
     if(props.color) {
         switch (props.color) {
             case "red":
-                bgColor = "bg-rose-700/75";
+                bgColor = "bg-rose-900/85";
+                break;
             case "black":
-                bgColor = `bg-black/75`;      
+                bgColor = `bg-black/75`;
+                break;
         }
     }
 

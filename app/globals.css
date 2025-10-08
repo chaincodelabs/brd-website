@@ -11,6 +11,7 @@
   --font-sans: "Poppins", sans-serif;
   --font-serif: "Playfair", serif;
   --font-mono: monospace;
+  --font-pixelify: "Pixelify Sans", mono;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,9 +42,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--text-7xl)
+  font-size: var(--text-4xl)
+}
+
+@media(min-width: 768px) {
+  h1 {
+    font-size: var(--text-6xl)
+  }
+}
+
+@media(min-width: 1024px) {
+  h1 {
+    font-size: var(--text-7xl)
+  }
 }
 
 h2 {
-  font-size: var(--text-5xl)
+  font-size: var(--text-3xl)
+}
+
+@media(min-width: 768px) {
+  h2 {
+    font-size: var(--text-4xl)
+  }
+}
+
+@media(min-width: 1024px) {
+  h2 {
+    font-size: var(--text-5xl)
+  }
 }
