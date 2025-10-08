@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Pill from "./Pill"
+import Link from 'next/link'
 
 const headerMenu = [
     {
@@ -33,7 +34,7 @@ export default function Header(){
         <header className="flex flex-col font-sans gap-2 lg:flex-row items-center lg:justify-between">
             <div className="flex flex-row justify-between w-full items-center p-6 lg:basis-1/3">
                 <div className="flex flex-row gap-4 items-center w-full">
-                    <a href="/" className="font-sans font-black !text-white text-3xl !no-underline">BRD<span className="text-rose-500">25</span></a>
+                    <Link href="/" className="font-sans font-black !text-white text-3xl !no-underline">BRD<span className="text-rose-500">25</span></Link>
                     <Pill text="Midtown NYC" uri="https://chaincode.com" />
                     
                 </div>
