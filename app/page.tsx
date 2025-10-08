@@ -35,11 +35,13 @@ export default function Home() {
     <div className="bg-slate-900">
       <Header />
       <main className="p-6">
-        <div id="hero" className="flex flex-col gap-6">
+        <div id="hero" className="flex flex-col gap-6 py-6">
           <HeroContent />
         </div>
-        <div id="about">
-          <AboutContent />
+        <div id="about" className="bg-black p-6 text-center md:p-16 lg:p-30 bg-[url(/dark-texture.webp)] bg-cover">
+          <div className="max-w-3xl flex flex-col gap-8 items-center mx-auto">
+            <AboutContent />
+          </div>
         </div>
         <div id="format">
           <FormatContent />

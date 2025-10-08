@@ -72,3 +72,7 @@ h2 {
     font-size: var(--text-5xl)
   }
 }
+
+#about p {
+  color: var(--color-zinc-400);
+}
