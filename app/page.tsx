@@ -23,7 +23,7 @@ const footerMenu = [
   },
   {
     name: 'Event',
-    uri: '/#event'
+    uri: '/#about'
   },
   {
     name: 'Format',
@@ -124,7 +124,7 @@ export default function Home() {
           <FinalMessageContent />
         </div>
       </main>
-      <footer className="p-6 pb-12 px-12">
+      <footer className="p-6 pb-12 px-12 relative z-2">
         <ul className="md:flex md:flex-row gap-4 w-full justify-between">
           {footerMenu.map((item, index) => (
             <li key={index}>

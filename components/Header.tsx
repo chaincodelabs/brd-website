@@ -7,7 +7,7 @@ import Link from 'next/link'
 const headerMenu = [
     {
         name: 'Event',
-        uri: '/#event'
+        uri: '/#about'
     },
     {
         name: 'Format',
