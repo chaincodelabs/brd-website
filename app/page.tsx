@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="format" className="flex flex-col gap-6 px-6 py-20 pb-0">
+        <div id="format" className="flex flex-col gap-6 px-6 py-20 pb-0 max-w-7xl mx-auto">
           <FormatContent />
         </div>
         <div id="prize" className="p-6 md:py-16 lg:py-30 flex flex-col gap-6">
@@ -120,11 +120,11 @@ export default function Home() {
             />
           ))}
         </div>
-        <div id="final-message" className="p-6">
+        <div id="final-message" className="p-6 max-w-3xl mx-auto text-center py-48 flex flex-col gap-10 items-center text-xl">
           <FinalMessageContent />
         </div>
       </main>
-      <footer className="p-6">
+      <footer className="p-6 pb-12 px-12">
         <ul className="md:flex md:flex-row gap-4 w-full justify-between">
           {footerMenu.map((item, index) => (
             <li key={index}>
