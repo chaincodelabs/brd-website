@@ -8,6 +8,8 @@ import FinalMessageContent from '@/content/final-message.mdx'
 import Header from '@/components/Header'
 import FormatItem from '@/components/FormatItem'
 import Picture from '@/components/Picture'
+import AgendaItem from '@/components/AgendaItem'
+import { Agenda } from '@/content/agenda'
 
 const footerMenu = [
   {
@@ -75,11 +77,18 @@ export default function Home() {
         </div>
         <div id="agenda" className="py-24 px-6 relative overflow-y-visible overflow-x-clip">
           <div className="absolute z-0 top-0 left-0 w-full h-full scale-y-150 scale-x-125 blur-3xl bg-gradient-to-b from-orange-600/50 via-orange-500/100 to-orange-600/50 opacity-30"></div>
-          <div className="relative z-[1] bg-black p-6 max-w-7xl mx-auto">
+          <div className="relative z-[1] bg-black p-8 max-w-7xl mx-auto">
             <div className="flex flex-col gap-8 mx-auto">
               <h2>Agenda</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-                dsafsdf
+              <div className="border border-zinc-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+                {Agenda.map((agendaItem) => (
+                  <AgendaItem
+                    time={agendaItem.time}
+                    type={agendaItem.type}
+                    content={agendaItem.content}
+                    imgSrc={agendaItem.imgSrc}
+                  />
+                ))}
               </div>
             </div>
           </div>
