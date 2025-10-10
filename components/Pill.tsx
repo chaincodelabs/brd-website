@@ -10,7 +10,7 @@ export default function Pill(props:PillProps){
     if(props.color) {
         switch (props.color) {
             case "red":
-                bgColor = "bg-rose-900/85";
+                bgColor = "bg-[#4C2324]";
                 break;
             case "black":
                 bgColor = `bg-black/75`;

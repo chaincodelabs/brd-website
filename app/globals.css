@@ -47,11 +47,17 @@ h1 {
 
 @media(min-width: 768px) {
   h1 {
-    font-size: var(--text-6xl)
+    font-size: var(--text-5xl)
   }
 }
 
 @media(min-width: 1024px) {
+  h1 {
+    font-size: var(--text-6xl)
+  }
+}
+
+@media(min-width: 1280px) {
   h1 {
     font-size: var(--text-7xl)
   }
@@ -75,4 +81,8 @@ h2 {
 
 #about p {
   color: var(--color-zinc-400);
+}
+
+#format-grid {
+  
 }
