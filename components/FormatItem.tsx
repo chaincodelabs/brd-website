@@ -11,7 +11,7 @@ interface FormatItemProps {
 }
 
 export default function FormatItem(props:FormatItemProps){
-    let classes = "p-3 flex flex-col gap-3 border border-solid border-zinc-500 h-full lg:h-auto" + (props.className ? " " + props.className : "");
+    const classes = "p-3 flex flex-col gap-3 border border-solid border-zinc-500 h-full lg:h-auto" + (props.className ? " " + props.className : "");
 
     return(
         <div className={classes}>

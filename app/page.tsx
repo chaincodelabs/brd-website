@@ -4,11 +4,8 @@ import HeroContent from '../content/hero.mdx'
 import AboutContent from '@/content/about.mdx'
 import FormatContent from '@/content/format.mdx'
 import PrizeContent from '@/content/prize.mdx'
-import AgendaContent from '@/content/agenda.mdx'
-import FAQContent from '@/content/faq.mdx'
 import FinalMessageContent from '@/content/final-message.mdx'
 import Header from '@/components/Header'
-import FormatItem from '@/components/FormatItem'
 import Picture from '@/components/Picture'
 import AgendaItem from '@/components/AgendaItem'
 import { Agenda } from '@/content/agenda'
@@ -96,12 +93,13 @@ export default function Home() {
             <div className="flex flex-col gap-8 mx-auto">
               <h2>Agenda</h2>
               <div className="border border-zinc-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-                {Agenda.map((agendaItem) => (
+                {Agenda.map((agendaItem, key) => (
                   <AgendaItem
                     time={agendaItem.time}
                     type={agendaItem.type}
                     content={agendaItem.content}
                     imgSrc={agendaItem.imgSrc}
+                    key={key}
                   />
                 ))}
               </div>

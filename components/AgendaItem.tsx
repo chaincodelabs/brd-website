@@ -22,8 +22,8 @@ export default function AgendaItem(props:AgendaEntry){
                 alt=""
             />
             : ""}
-            {props.content.map((contentItem) => (
-                <div>
+            {props.content.map((contentItem, key) => (
+                <div key={key}>
                     <h3>{contentItem.title}</h3>
                     {contentItem.speaker ?
                     <p className="text-zinc-400">{contentItem.speaker}</p>
