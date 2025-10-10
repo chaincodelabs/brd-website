@@ -1,3 +1,5 @@
+'use client'
+
 import HeroContent from '../content/hero.mdx'
 import AboutContent from '@/content/about.mdx'
 import FormatContent from '@/content/format.mdx'
@@ -10,6 +12,9 @@ import FormatItem from '@/components/FormatItem'
 import Picture from '@/components/Picture'
 import AgendaItem from '@/components/AgendaItem'
 import { Agenda } from '@/content/agenda'
+import { faq } from '@/content/faq'
+import FAQItem from '@/components/FAQItem'
+import { useState } from 'react'
 
 const footerMenu = [
   {
@@ -35,6 +40,16 @@ const footerMenu = [
 ]
 
 export default function Home() {
+  const [openFAQs, setOpenFAQs] = useState<number[]>([])
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQs(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    )
+  }
+
   return (
     <div className="bg-sky-950 bg-gradient-to-b from-[#182128] via-[#0B1116] to-[#182128] relative">
       <div className="fixed z-0 top-0 left-0 w-full h-full bg-gradient-to-b from-[#40607A]/50 from-0% to-[#40607A]/0 to-30%"></div>
@@ -93,8 +108,17 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="faq" className="p-6">
-          <FAQContent />
+        <div id="faq" className="p-6 relative z-1 flex flex-col gap-6 max-w-7xl mx-auto">
+          <h2>FAQ</h2>
+          {faq.map((faqItem, index) => (
+            <FAQItem 
+              key={index}
+              question={faqItem.question} 
+              answer={faqItem.answer} 
+              open={openFAQs.includes(index)}
+              onClick={() => toggleFAQ(index)}
+            />
+          ))}
         </div>
         <div id="final-message" className="p-6">
           <FinalMessageContent />
