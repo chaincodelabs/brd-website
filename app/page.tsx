@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className="bg-sky-950 bg-gradient-to-b from-[#182128] via-[#0B1116] to-[#182128] relative">
       <div className="fixed z-0 top-0 left-0 w-full h-full bg-gradient-to-b from-[#40607A]/50 from-0% to-[#40607A]/0 to-30%"></div>
-      <div className="fixed z-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-cyan-700/0 from-50% to-cyan-700/50 to-100%"></div>
+      <div className="fixed z-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-[#40607A]/0 from-50% to-[#40607A]/50 to-100%"></div>
       <div className="absolute z-0 top- left-0 w-full h-screen bg-[url(/hero-bg-texture.png)] bg-no-repeat bg-cover"></div>
       <Header />
       <main className="relative z-1">
