@@ -31,7 +31,7 @@ export default function Header(){
     }
 
     return(
-        <header className="flex flex-col font-sans gap-2 lg:flex-row items-center lg:justify-between relative z-1">
+        <header className="flex flex-col font-sans gap-2 lg:flex-row items-center lg:justify-between fixed z-2 w-full bg-black/10 backdrop-blur-xl">
             <div className="flex flex-row justify-between w-full items-center p-6 lg:basis-1/3">
                 <div className="flex flex-row gap-4 items-center w-full">
                     <Link href="/" className="font-sans font-black !text-white text-3xl !no-underline">BRD<span className="text-[#BB393C]">25</span></Link>
