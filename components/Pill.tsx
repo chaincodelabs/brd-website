@@ -19,12 +19,12 @@ export default function Pill(props:PillProps){
         }
     }
 
-    const styling = `${bgColor} text-base rounded-full px-4 py-2 font-sans !text-white text-nowrap w-auto inline-block`
+    const styling = `${bgColor} text-base rounded-full px-4 pl-2 py-2 font-sans !text-white text-nowrap w-auto inline-block`
 
     const content = (
         <span className="flex flex-row items-center gap-2">
             {props.icon && (
-                <img src={props.icon} alt="" className="w-4 h-4" />
+                <img src={props.icon} alt="" className="w-6 h-6" />
             )}
             {props.text}
         </span>
