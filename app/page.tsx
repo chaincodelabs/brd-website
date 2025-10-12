@@ -54,18 +54,20 @@ export default function Home() {
       <div className="absolute z-0 top- left-0 w-full h-screen bg-[url(/hero-bg-texture.png)] bg-no-repeat bg-cover"></div>
       <Header />
       <main className="relative z-1">
-        <div id="hero" className="flex flex-col gap-6 min-h-screen items-center justify-center lg:flex-row">
-          <div className="flex flex-col gap-6 p-6 lg:basis-1/2 xl:basis-2/5">
-            <HeroContent />
+        <div id="hero" className="p-6 lg:p-12 relative">
+          <div className="flex flex-col gap-6 min-h-screen items-center justify-center lg:flex-row max-lg:relative max-lg:top-[96px] max-w-7xl mx-auto lg:justify-start">
+            <div className="flex flex-col gap-6 lg:basis-1/2 xl:basis-2/5 text-shadow-md">
+              <HeroContent />
+            </div>
+            <Picture
+              src='/hero-art.webp'
+              src2x='/hero-art@2x.webp'
+              alt=""
+              className="w-full h-auto lg:basis-1/2 xl:basis-3/5 max-lg:scale-125 lg:absolute lg:right-0 lg:w-3/5"
+            />
           </div>
-          <Picture
-            src='/hero-art.webp'
-            src2x='/hero-art@2x.webp'
-            alt=""
-            className="w-full h-auto lg:basis-1/2 xl:basis-3/5"
-          />
         </div>
-        <div id="about" className="py-24 px-6 relative overflow-y-visible overflow-x-clip">
+        <div id="about" className="py-24 px-6 lg:px-12 relative overflow-y-visible overflow-x-clip">
           <div className="absolute z-0 top-0 left-0 w-full h-full scale-y-150 scale-x-125 blur-3xl bg-gradient-to-b from-orange-600/50 via-orange-500/100 to-orange-600/50 opacity-30"></div>
           <div className="relative z-[1] bg-black p-6 text-center md:p-16 lg:p-30 bg-[url(/dark-texture.webp)] bg-cover max-w-7xl mx-auto">
             <div className="max-w-3xl flex flex-col gap-8 items-center mx-auto">
@@ -73,7 +75,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="format" className="flex flex-col gap-6 px-6 py-20 pb-0 max-w-7xl mx-auto">
+        <div id="format" className="flex flex-col gap-6 px-6 py-20 lg:px-12 pb-0 max-w-7xl mx-auto">
           <FormatContent />
         </div>
         <div id="prize" className="p-6 md:py-16 lg:py-30 flex flex-col gap-6">
@@ -87,7 +89,7 @@ export default function Home() {
             className="w-full h-auto max-w-7xl mx-auto block"
           />
         </div>
-        <div id="agenda" className="py-24 px-6 relative overflow-y-visible overflow-x-clip">
+        <div id="agenda" className="py-24 px-6 lg:px-12 relative overflow-y-visible overflow-x-clip">
           <div className="absolute z-0 top-0 left-0 w-full h-full scale-y-150 scale-x-125 blur-3xl bg-gradient-to-b from-orange-600/50 via-orange-500/100 to-orange-600/50 opacity-30"></div>
           <div className="relative z-[1] bg-black p-8 max-w-7xl mx-auto">
             <div className="flex flex-col gap-8 mx-auto">
@@ -106,7 +108,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="faq" className="p-6 relative z-1 flex flex-col gap-6 max-w-7xl mx-auto">
+        <div id="faq" className="p-6 lg:px-12 relative z-1 flex flex-col gap-6 max-w-7xl mx-auto">
           <h2>FAQ</h2>
           {faq.map((faqItem, index) => (
             <FAQItem 
@@ -122,7 +124,7 @@ export default function Home() {
           <FinalMessageContent />
         </div>
       </main>
-      <footer className="p-6 pb-12 px-12 relative z-2">
+      <footer className="p-6 lg:px-12 pb-12 px-12 relative z-2">
         <ul className="md:flex md:flex-row gap-4 w-full justify-between">
           {footerMenu.map((item, index) => (
             <li key={index}>
