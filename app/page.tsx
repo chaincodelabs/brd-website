@@ -56,7 +56,7 @@ export default function Home() {
       <main className="relative z-1">
         <div id="hero" className="p-6 lg:p-12 relative">
           <div className="flex flex-col gap-6 min-h-screen items-center justify-center lg:flex-row max-lg:relative max-lg:top-[96px] max-w-7xl mx-auto lg:justify-start overflow-y-visible">
-            <div className="flex flex-col gap-6 lg:basis-1/2 xl:basis-2/5 text-shadow-md">
+            <div className="flex flex-col gap-6 lg:basis-1/2 xl:basis-2/5 text-shadow-md text-xl">
               <HeroContent />
             </div>
             <Picture
