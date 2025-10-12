@@ -122,7 +122,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <div id="final-message" className="p-6 max-w-3xl mx-auto text-center py-48 flex flex-col gap-10 items-center text-2xl">
+        <div id="final-message" className="p-6 max-w-3xl mx-auto text-center py-48 max-md:py-24 flex flex-col gap-10 items-center text-2xl">
           <FinalMessageContent />
         </div>
       </main>
