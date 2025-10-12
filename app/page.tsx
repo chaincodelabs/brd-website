@@ -55,7 +55,7 @@ export default function Home() {
       <Header />
       <main className="relative z-1">
         <div id="hero" className="p-6 lg:p-12 relative">
-          <div className="flex flex-col gap-6 min-h-screen items-center justify-center lg:flex-row max-lg:relative max-lg:top-[96px] max-w-7xl mx-auto lg:justify-start">
+          <div className="flex flex-col gap-6 min-h-screen items-center justify-center lg:flex-row max-lg:relative max-lg:top-[96px] max-w-7xl mx-auto lg:justify-start overflow-y-visible">
             <div className="flex flex-col gap-6 lg:basis-1/2 xl:basis-2/5 text-shadow-md">
               <HeroContent />
             </div>
@@ -63,7 +63,7 @@ export default function Home() {
               src='/hero-art.webp'
               src2x='/hero-art@2x.webp'
               alt=""
-              className="w-full h-auto lg:basis-1/2 xl:basis-3/5 max-lg:scale-125 lg:absolute lg:right-0 lg:w-3/5"
+              className="w-full h-auto lg:basis-1/2 xl:basis-3/5 relative max-lg:-right-6 lg:absolute lg:right-0 lg:w-3/5"
             />
           </div>
         </div>
@@ -75,8 +75,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="format" className="flex flex-col gap-6 px-6 py-20 lg:px-12 pb-0 max-w-7xl mx-auto">
-          <FormatContent />
+        <div id="format" className="px-6 py-20 lg:px-12 pb-0">
+          <div className="flex flex-col gap-6 max-w-7xl mx-auto">
+            <FormatContent />
+          </div>
         </div>
         <div id="prize" className="p-6 md:py-16 lg:py-30 flex flex-col gap-6">
           <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center items-center">
