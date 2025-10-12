@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -12,13 +12,6 @@
   --font-serif: "Playfair", serif;
   --font-mono: monospace;
   --font-pixelify: "Pixelify Sans", mono;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -44,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: var(--text-4xl);
   line-height: 1;
+  color: var(--text-white);
 }
 
 @media(min-width: 768px) {
