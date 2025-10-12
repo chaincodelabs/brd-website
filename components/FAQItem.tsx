@@ -26,10 +26,10 @@ export default function FAQItem(props:FAQItemProps){
                 </div>
             )}
             <div className="flex items-center justify-between">
-                <h3>{props.question}</h3>
+                <h3 className="text-xl">{props.question}</h3>
             </div>
             {props.open && (
-                <p className="text-zinc-400">{props.answer}</p>
+                <p className="text-zinc-400 text-xl">{props.answer}</p>
             )}
         </div>
     )
