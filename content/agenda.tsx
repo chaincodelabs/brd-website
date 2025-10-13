@@ -22,9 +22,9 @@ export const Agenda:AgendaEntry[] = [
     },
     {
         time: "11:20 - 11:40 EDT",
-        type: "image",
+        type: "video",
         content: [{title: "Coffee Break"}],
-        imgSrc: "/coffee.png"
+        videoSrc: "/coffee.webm"
     },
     {
         time: "11:40 - 12:30 EDT",
@@ -33,9 +33,9 @@ export const Agenda:AgendaEntry[] = [
     },
     {
         time: "11:20 - 11:40 EDT",
-        type: "image",
+        type: "video",
         content: [{title: "Lunch Break"}],
-        imgSrc: "/lunch.png"
+        videoSrc: "/lunch.webm"
     },
     {
         time: "14:15 - 15:40 EDT",
@@ -58,8 +58,8 @@ export const Agenda:AgendaEntry[] = [
     },
     {
         time: "11:20 - 11:40 CET EDT",
-        type: "image",
+        type: "video",
         content: [{title: "Happy Hour"}],
-        imgSrc: "/coffee.png"
+        videoSrc: "/coffee.webm"
     }
 ]

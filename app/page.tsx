@@ -103,6 +103,7 @@ export default function Home() {
                     type={agendaItem.type}
                     content={agendaItem.content}
                     imgSrc={agendaItem.imgSrc}
+                    videoSrc={agendaItem.videoSrc}
                     key={key}
                   />
                 ))}
@@ -110,17 +111,19 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="faq" className="p-6 lg:px-12 relative z-1 flex flex-col gap-6 max-w-7xl mx-auto">
-          <h2>FAQ</h2>
-          {faq.map((faqItem, index) => (
-            <FAQItem 
-              key={index}
-              question={faqItem.question} 
-              answer={faqItem.answer} 
-              open={openFAQs.includes(index)}
-              onClick={() => toggleFAQ(index)}
-            />
-          ))}
+        <div id="faq" className="p-6 lg:px-12 relative z-1">
+          <div className="flex flex-col gap-6 max-w-7xl mx-auto">
+            <h2>FAQ</h2>
+            {faq.map((faqItem, index) => (
+              <FAQItem 
+                key={index}
+                question={faqItem.question} 
+                answer={faqItem.answer} 
+                open={openFAQs.includes(index)}
+                onClick={() => toggleFAQ(index)}
+              />
+            ))}
+          </div>
         </div>
         <div id="final-message" className="p-6 max-w-3xl mx-auto text-center py-48 max-md:py-24 flex flex-col gap-10 items-center text-2xl">
           <FinalMessageContent />

@@ -2,9 +2,10 @@ import Picture from "./Picture";
 
 export type AgendaEntry = {
     time: string;
-    type: "single" | "multi" | "image";
+    type: "single" | "multi" | "image" | "video";
     content: {title: string; speaker?: string;}[]
     imgSrc?: string;
+    videoSrc?: string;
 }
 
 export default function AgendaItem(props:AgendaEntry){
@@ -21,6 +22,9 @@ export default function AgendaItem(props:AgendaEntry){
                 src2x={props.imgSrc}
                 alt=""
             />
+            : ""}
+            {props.videoSrc && props.type === "video" ?
+            <video src={props.videoSrc} loop autoPlay muted></video>
             : ""}
             {props.content.map((contentItem, key) => (
                 <div key={key}>
