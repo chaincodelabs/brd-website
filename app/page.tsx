@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="faq" className="p-6 lg:px-12 relative z-1">
+        <div id="faq" className="p-6 lg:px-12 relative z-1 pb-24">
           <div className="flex flex-col gap-6 max-w-7xl mx-auto">
             <h2>FAQ</h2>
             {faq.map((faqItem, index) => (
@@ -125,12 +125,12 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div id="final-message" className="p-6 max-w-3xl mx-auto text-center py-48 max-md:py-24 flex flex-col gap-10 items-center text-2xl">
+        {/* <div id="final-message" className="p-6 max-w-3xl mx-auto text-center py-48 max-md:py-24 flex flex-col gap-10 items-center text-2xl">
           <FinalMessageContent />
-        </div>
+        </div> */}
       </main>
-      <footer className="p-6 lg:px-12 pb-12 px-12 relative z-2">
-        <ul className="md:flex md:flex-row gap-4 w-full justify-between">
+      <footer className="p-6 lg:p-12 relative z-2">
+        <ul className="md:flex md:flex-row gap-4 w-full justify-between max-w-7xl mx-auto">
           {footerMenu.map((item, index) => (
             <li key={index}>
               <a href={item.uri} className="font-sans !text-white uppercase !no-underline py-1 block">{item.name}</a>
