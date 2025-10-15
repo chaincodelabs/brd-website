@@ -14,7 +14,7 @@ export const faq:FAQEntry[] = [
     },
     {
         question: "How do I apply or register for the event?",
-        answer: "Bitcoin ipsum dolor sit amet. Merkle Tree satoshis Merkle Tree hash, full node blocksize, halvening."
+        answer: "Please apply to attend by filling out this form and we will be in touch with more details:  <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfd-OzHYbHdPXbTRWDD6MDSOb-5tU0NsQxngKh4QEuls5UhbA/viewform?usp=header\">sign up here</a>"
     },
     {
         question: "What kind of research topics are featured?",

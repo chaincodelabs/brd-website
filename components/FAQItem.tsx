@@ -29,7 +29,10 @@ export default function FAQItem(props:FAQItemProps){
                 <h3 className="text-xl">{props.question}</h3>
             </div>
             {props.open && (
-                <p className="text-zinc-400 text-xl">{props.answer}</p>
+                <p 
+                    className="text-zinc-400 text-xl"
+                    dangerouslySetInnerHTML={{ __html: props.answer }}
+                />
             )}
         </div>
     )
