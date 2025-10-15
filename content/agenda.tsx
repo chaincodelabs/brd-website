@@ -7,7 +7,7 @@ export const Agenda:AgendaEntry[] = [
         content: [{title: "Welcome", speaker: "TBD"}]
     },
     {
-        time: "10:00 - 10:15 CET EDT",
+        time: "10:00 - 10:15 EDT",
         type: "single",
         content: [{title: "Opening remarks", speaker: "TBD"}]
     },
@@ -23,8 +23,7 @@ export const Agenda:AgendaEntry[] = [
     {
         time: "11:20 - 11:40 EDT",
         type: "video",
-        content: [{title: "Coffee Break"}],
-        videoSrc: "/coffee.webm"
+        content: [{title: "Coffee Break", speaker: ""}]
     },
     {
         time: "11:40 - 12:30 EDT",
@@ -34,8 +33,7 @@ export const Agenda:AgendaEntry[] = [
     {
         time: "11:20 - 11:40 EDT",
         type: "video",
-        content: [{title: "Lunch Break"}],
-        videoSrc: "/lunch.webm"
+        content: [{title: "Lunch", speaker: ""}]
     },
     {
         time: "14:15 - 15:40 EDT",
@@ -58,8 +56,7 @@ export const Agenda:AgendaEntry[] = [
     },
     {
         time: "11:20 - 11:40 CET EDT",
-        type: "video",
-        content: [{title: "Happy Hour"}],
-        videoSrc: "/coffee.webm"
+        type: "single",
+        content: [{title: "Happy Hour", speaker: ""}]
     }
 ]

@@ -9,7 +9,7 @@ export type AgendaEntry = {
 }
 
 export default function AgendaItem(props:AgendaEntry){
-    let classes = "font-sans flex flex-col gap-3 py-3 px-3 border border-zinc-800"
+    let classes = "font-sans flex flex-col gap-3 py-3 px-3 border border-zinc-800 min-h-100 justify-between"
 
     if(props.type === "multi") classes += " sm:col-span-2"
 
@@ -26,14 +26,16 @@ export default function AgendaItem(props:AgendaEntry){
             {props.videoSrc && props.type === "video" ?
             <video src={props.videoSrc} loop autoPlay muted></video>
             : ""}
-            {props.content.map((contentItem, key) => (
-                <div key={key}>
-                    <h3>{contentItem.title}</h3>
-                    {contentItem.speaker ?
-                    <p className="text-zinc-400">{contentItem.speaker}</p>
-                    : ""}
-                </div>
-            ))}
+            <div className="flex flex-col gap-3">
+                {props.content.map((contentItem, key) => (
+                    <div key={key}>
+                        <h3>{contentItem.title}</h3>
+                        {contentItem.speaker ?
+                        <p className="text-zinc-400">{contentItem.speaker}</p>
+                        : ""}
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
