@@ -18,6 +18,6 @@ export const faq:FAQEntry[] = [
     },
     {
         question: "What kind of research topics are featured?",
-        answer: "Bitcoin ipsum dolor sit amet. Merkle Tree satoshis Merkle Tree hash, full node blocksize, halvening."
+        answer: "Bitcoin Research Day features research talks that advance Bitcoin and the Lightning Network. Talks may focus on cryptography, theoretical computer science, network theory, economics and neighboring fields."
     },
 ]
