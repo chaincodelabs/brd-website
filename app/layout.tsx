@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Poppins, Pixelify_Sans } from "next/font/google";
 import "./globals.css";
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
@@ -51,7 +52,11 @@ export default function RootLayout({
       <body
         className={`${playfairDisplay.variable} ${poppins.variable} ${pixelifySans.variable} antialiased`}
       >
-        {children}
+        <div className="bg-sky-950 bg-gradient-to-b from-[#182128] via-[#0B1116] to-[#182128] relative">
+        <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

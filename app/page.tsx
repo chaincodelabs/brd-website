@@ -4,37 +4,12 @@ import HeroContent from '../content/hero.mdx'
 import AboutContent from '@/content/about.mdx'
 import FormatContent from '@/content/format.mdx'
 import PrizeContent from '@/content/prize.mdx'
-import FinalMessageContent from '@/content/final-message.mdx'
-import Header from '@/components/Header'
 import Picture from '@/components/Picture'
 import AgendaItem from '@/components/AgendaItem'
 import { Agenda } from '@/content/agenda'
 import { faq } from '@/content/faq'
 import FAQItem from '@/components/FAQItem'
 import { useState } from 'react'
-
-const footerMenu = [
-  {
-    name: 'Home',
-    uri: '/'
-  },
-  {
-    name: 'Event',
-    uri: '/#about'
-  },
-  {
-    name: 'Format',
-    uri: '/#format'
-  },
-  {
-    name: 'Research Prize',
-    uri: '/#prize'
-  },
-  {
-    name: 'Agenda',
-    uri: '/#agenda'
-  }
-]
 
 export default function Home() {
   const [openFAQs, setOpenFAQs] = useState<number[]>([])
@@ -48,11 +23,10 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-sky-950 bg-gradient-to-b from-[#182128] via-[#0B1116] to-[#182128] relative">
+    <>
       <div className="fixed z-0 top-0 left-0 w-full h-full bg-gradient-to-b from-[#40607A]/50 from-0% to-[#40607A]/0 to-30%"></div>
       <div className="fixed z-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-[#40607A]/0 from-50% to-[#40607A]/50 to-100%"></div>
       <div className="absolute z-0 top- left-0 w-full h-screen bg-[url(/hero-bg-texture.png)] bg-no-repeat bg-cover"></div>
-      <Header />
       <main className="relative z-1">
         <div id="hero" className="p-6 lg:p-12 relative">
           <div className="flex flex-col gap-6 min-h-screen items-center justify-center lg:flex-row max-lg:relative max-lg:top-[96px] max-w-7xl mx-auto lg:justify-start overflow-y-visible">
@@ -125,19 +99,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        {/* <div id="final-message" className="p-6 max-w-3xl mx-auto text-center py-48 max-md:py-24 flex flex-col gap-10 items-center text-2xl">
-          <FinalMessageContent />
-        </div> */}
       </main>
-      <footer className="p-6 lg:p-12 relative z-2">
-        <ul className="md:flex md:flex-row gap-4 w-full justify-between max-w-7xl mx-auto">
-          {footerMenu.map((item, index) => (
-            <li key={index}>
-              <a href={item.uri} className="font-sans !text-white uppercase !no-underline py-1 block">{item.name}</a>
-            </li>
-          ))}
-        </ul>
-      </footer>
-    </div>
+    </>
   );
 }
