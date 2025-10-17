@@ -20,6 +20,10 @@ const headerMenu = [
     {
         name: 'Agenda',
         uri: '/#agenda'
+    },
+    {
+        name: 'Previous Events',
+        uri: '/prev'
     }
 ]
 
