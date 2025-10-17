@@ -4,9 +4,11 @@ This is a NextJS website, the content of which should be mostly editable via mar
 
 ## Development and Building
 
-Run `pnpm dev` to preview the site in a browser as you develop.
+Run `yarn dev` to preview the site in a browser as you develop.
 
-Run `pnpm build` to generate a static site. The output will be stored in `./out`.
+Run `yarn build` to generate a static site. The output will be stored in `./out`.
+
+Run `yarn serve` to quickly preview the contents of `./out` in the browser.
 
 To deploy, push the contents of `./out` to a webserver. Note: it expects to be at the root of a domain/subdomain, not housed in a subdirectory.
 
