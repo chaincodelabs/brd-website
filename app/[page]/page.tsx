@@ -4,9 +4,9 @@ import path from 'path'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
 interface PageProps {
-  params: {
+  params: Promise<{
     page: string
-  }
+  }>
 }
 
 // Get all available MDX files for static generation
@@ -27,7 +27,7 @@ export async function generateStaticParams() {
 }
 
 export default async function DynamicPage({ params }: PageProps) {
-  const { page } = params
+  const { page } = await params
   
   try {
     // Read the MDX file
