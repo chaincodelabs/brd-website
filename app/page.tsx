@@ -1,0 +1,105 @@
+'use client'
+
+import HeroContent from '@/content/includes/hero.mdx'
+import AboutContent from '@/content/includes/about.mdx'
+import FormatContent from '@/content/includes/format.mdx'
+import PrizeContent from '@/content/includes/prize.mdx'
+import { Agenda } from '@/content/data/agenda'
+import { faq } from '@/content/data/faq'
+import Picture from '@/components/Picture'
+import AgendaItem from '@/components/AgendaItem'
+import FAQItem from '@/components/FAQItem'
+import { useState } from 'react'
+
+export default function Home() {
+  const [openFAQs, setOpenFAQs] = useState<number[]>([])
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQs(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    )
+  }
+
+  return (
+    <>
+      <div className="fixed z-0 top-0 left-0 w-full h-full bg-gradient-to-b from-[#40607A]/50 from-0% to-[#40607A]/0 to-30%"></div>
+      <div className="fixed z-0 bottom-0 left-0 w-full h-full bg-gradient-to-b from-[#40607A]/0 from-50% to-[#40607A]/50 to-100%"></div>
+      <div className="absolute z-0 top- left-0 w-full h-screen bg-[url(/hero-bg-texture.png)] bg-no-repeat bg-cover"></div>
+      <main className="relative z-1">
+        <div id="hero" className="p-6 lg:p-12 relative">
+          <div className="flex flex-col gap-6 min-h-screen items-center justify-center lg:flex-row max-lg:relative max-lg:top-[96px] max-w-7xl mx-auto lg:justify-start overflow-y-visible">
+            <div className="flex flex-col gap-6 lg:basis-1/2 xl:basis-2/5 text-shadow-md text-xl">
+              <HeroContent />
+            </div>
+            <Picture
+              src='/hero-art.webp'
+              src2x='/hero-art@2x.webp'
+              alt=""
+              className="w-full h-auto lg:basis-1/2 xl:basis-3/5 relative max-lg:-right-6 lg:absolute lg:right-0 lg:w-3/5"
+            />
+          </div>
+        </div>
+        <div id="about" className="py-24 px-6 lg:px-12 relative overflow-y-visible overflow-x-clip">
+          <div className="absolute z-0 top-0 left-0 w-full h-full scale-y-150 scale-x-125 blur-3xl bg-gradient-to-b from-orange-600/50 via-orange-500/100 to-orange-600/50 opacity-30"></div>
+          <div className="relative z-[1] bg-black p-6 text-center md:p-16 lg:p-30 bg-[url(/dark-texture.webp)] bg-cover max-w-7xl mx-auto">
+            <div className="max-w-3xl flex flex-col gap-8 items-center mx-auto">
+              <AboutContent />
+            </div>
+          </div>
+        </div>
+        <div id="format" className="px-6 py-20 lg:px-12 pb-0">
+          <div className="flex flex-col gap-6 max-w-7xl mx-auto">
+            <FormatContent />
+          </div>
+        </div>
+        <div id="prize" className="p-6 md:py-16 lg:py-30 flex flex-col gap-6">
+          <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center items-center">
+            <PrizeContent />
+          </div>
+          <Picture 
+            src="/bitcoin-research-prize.png"
+            src2x="/bitcoin-research-prize@2x.png"
+            alt="Bitcoin Research Prize"
+            className="w-full h-auto max-w-7xl mx-auto block"
+          />
+        </div>
+        <div id="agenda" className="py-24 px-6 lg:px-12 relative overflow-y-visible overflow-x-clip">
+          <div className="absolute z-0 top-0 left-0 w-full h-full scale-y-150 scale-x-125 blur-3xl bg-gradient-to-b from-orange-600/50 via-orange-500/100 to-orange-600/50 opacity-30"></div>
+          <div className="relative z-[1] bg-black p-8 max-w-7xl mx-auto">
+            <div className="flex flex-col gap-8 mx-auto">
+              <h2>Agenda</h2>
+              <div className="border border-zinc-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+                {Agenda.map((agendaItem, key) => (
+                  <AgendaItem
+                    time={agendaItem.time}
+                    type={agendaItem.type}
+                    content={agendaItem.content}
+                    imgSrc={agendaItem.imgSrc}
+                    videoSrc={agendaItem.videoSrc}
+                    key={key}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="faq" className="p-6 lg:px-12 relative z-1 pb-24">
+          <div className="flex flex-col gap-6 max-w-7xl mx-auto">
+            <h2>FAQ</h2>
+            {faq.map((faqItem, index) => (
+              <FAQItem 
+                key={index}
+                question={faqItem.question} 
+                answer={faqItem.answer} 
+                open={openFAQs.includes(index)}
+                onClick={() => toggleFAQ(index)}
+              />
+            ))}
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
