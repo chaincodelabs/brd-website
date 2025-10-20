@@ -70,18 +70,22 @@ export default function Home() {
           <div className="relative z-[1] bg-black p-8 max-w-7xl mx-auto">
             <div className="flex flex-col gap-8 mx-auto">
               <h2>Agenda</h2>
-              <div className="border border-zinc-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-                {Agenda.map((agendaItem, key) => (
-                  <AgendaItem
-                    time={agendaItem.time}
-                    type={agendaItem.type}
-                    content={agendaItem.content}
-                    imgSrc={agendaItem.imgSrc}
-                    videoSrc={agendaItem.videoSrc}
-                    key={key}
-                  />
-                ))}
-              </div>
+              {Agenda.length === 0 ?
+                <p className="font-sans text-2xl text-center border-zinc-800 border p-6">Coming Soon</p>
+              :
+                <div className="border border-zinc-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+                  {Agenda.map((agendaItem, key) => (
+                    <AgendaItem
+                      time={agendaItem.time}
+                      type={agendaItem.type}
+                      content={agendaItem.content}
+                      imgSrc={agendaItem.imgSrc}
+                      videoSrc={agendaItem.videoSrc}
+                      key={key}
+                    />
+                  ))}
+                </div>
+              }
             </div>
           </div>
         </div>
