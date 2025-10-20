@@ -6,7 +6,7 @@ type FAQEntry = {
 export const faq:FAQEntry[] = [
     {
         question: "When and where is the event held?",
-        answer: "The next edition is scheduled for 22nd November 2024 in Midtown New York City."
+        answer: "The next edition is scheduled for 7th November 2025 in Midtown New York City."
     },
     {
         question: "Who should attend Bitcoin Research Day?",
