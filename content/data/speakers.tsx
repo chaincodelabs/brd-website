@@ -1,38 +1,43 @@
 type Speaker = {
     name: string;
-    title: string;
-    organization: string;
+    title?: string;
+    organization?: string;
     imgSrc: string;
     imgSrc2x: string;
+    link?: string;
 }
 
 export const Speakers:Speaker[] = [
     {
-        name: "Alice Speaker",
+        name: "Aviv Zohar",
+        title: "Professor",
+        organization: "The Hebrew University",
+        imgSrc: "/speakers/aviv-zohar.webp",
+        imgSrc2x: "/speakers/aviv-zohar@2x.webp",
+        link: "https://x.com/Avivz78"
+    },
+    {
+        name: "b10c",
+        title: "Developer & Observer",
+        organization: "OpenSats Grantee",
+        imgSrc: "/speakers/b10c.webp",
+        imgSrc2x: "/speakers/b10c@2x.webp",
+        link: "https://x.com/0xB10C"
+    },
+    {
+        name: "Neha Narula",
+        title: "Director of Digital Currency",
+        organization: "MIT Media Lab",
+        imgSrc: "/speakers/neha-narula.webp",
+        imgSrc2x: "/speakers/neha-narula@2x.webp",
+        link: "https://x.com/neha"
+    },
+    {
+        name: "Veronika Kuett",
         title: "Researcher",
-        organization: "Awesome University",
-        imgSrc: "/speakers/alice.webp",
-        imgSrc2x: "/speakers/alice@2x.webp",
-    },
-    {
-        name: "Bob Speaker",
-        title: "Engineer",
-        organization: "BOSS Accelerator",
-        imgSrc: "/speakers/bob.webp",
-        imgSrc2x: "/speakers/bob@2x.webp",
-    },
-    {
-        name: "Charlotte Speaker",
-        title: "Data Scientist",
-        organization: "Radical University",
-        imgSrc: "/speakers/charlotte.webp",
-        imgSrc2x: "/speakers/charlotte@2x.webp",
-    },
-    {
-        name: "David Speaker",
-        title: "Researcher",
-        organization: "Independent",
-        imgSrc: "/speakers/david.webp",
-        imgSrc2x: "/speakers/david@2x.webp",
+        organization: "Ark Labs",
+        imgSrc: "/speakers/veronika-kuett.webp",
+        imgSrc2x: "/speakers/veronika-kuett@2x.webp",
+        link: "https://x.com/VeronikaKuett"
     },
 ]

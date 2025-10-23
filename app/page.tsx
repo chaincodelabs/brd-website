@@ -70,26 +70,44 @@ export default function Home() {
           <div className="flex flex-col gap-12 max-w-7xl w-full mx-auto text-center items-center">
             <h2>Speakers</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
-              {Speakers.map((speaker, index) =>(
-                <div className="flex flex-col gap-6 items-center justify-start" key={index}>
-                  <div className="rounded-3xl overflow-hidden  border border-zinc-500 p-2">
-                    <div className='rounded-2xl overflow-hidden w-[200px] h-[200px] grayscale-100'>
-                      <Picture
-                        src={speaker.imgSrc}
-                        src2x={speaker.imgSrc2x}
-                        alt={speaker.name}
-                        width={128}
-                        height={128}
-                      />
+              {Speakers.map((speaker, index) =>{
+                const SpeakerContent = () => (
+                  <div className="flex flex-col gap-6 items-center justify-start">
+                    <div className="rounded-3xl overflow-hidden  border border-zinc-500 p-2">
+                      <div className='rounded-2xl overflow-hidden w-[200px] h-[200px] grayscale-100'>
+                        <Picture
+                          src={speaker.imgSrc}
+                          src2x={speaker.imgSrc2x}
+                          alt={speaker.name}
+                          width={128}
+                          height={128}
+                        />
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <h3 className="!mb-0 text-white">{speaker.name}</h3>
+                      {speaker.title && <p className="!mb-0 text-white">{speaker.title}</p>}
+                      {speaker.organization && <p className="!mb-0 text-zinc-300">{speaker.organization}</p>}
                     </div>
                   </div>
-                  <div className="flex flex-col gap-1">
-                    <h3 className="!mb-0">{speaker.name}</h3>
-                    <p className="!mb-0">{speaker.title}</p>
-                    <p className="!mb-0 text-zinc-300">{speaker.organization}</p>
+                );
+
+                return speaker.link ? (
+                  <a 
+                    href={speaker.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="transition-opacity text-white hover:!no-underline"
+                    key={index}
+                  >
+                    <SpeakerContent />
+                  </a>
+                ) : (
+                  <div key={index}>
+                    <SpeakerContent />
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
