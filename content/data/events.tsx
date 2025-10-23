@@ -94,5 +94,32 @@ export const Events:Event[] = [
                 videoUrl: "https://www.youtube.com/watch?v=6YBp1xbQV8o"
             }
         ]
-    }
+    },
+    // {
+    //     year: "20XX",
+    //     events: [
+    //         {
+    //             title: "Title of Eent",
+    //             speaker: "Speaker Name",
+    //         },
+    //     ]
+    // },
+    // {
+    //     year: "20XY",
+    //     events: [
+    //         {
+    //             title: "Title of Eent",
+    //             speaker: "Speaker Name",
+    //         },
+    //     ]
+    // },
+    // {
+    //     year: "20XZ",
+    //     events: [
+    //         {
+    //             title: "Title of Eent",
+    //             speaker: "Speaker Name",
+    //         },
+    //     ]
+    // },
 ]
