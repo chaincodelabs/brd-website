@@ -54,6 +54,7 @@ export default function PrevPage(){
                             speaker={event.speaker}
                             title={event.title}
                             videoUrl={event.videoUrl}
+                            prize={event.prize}
                         />
                     ))}
                 </div>

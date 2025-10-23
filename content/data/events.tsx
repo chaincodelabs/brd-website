@@ -1,19 +1,25 @@
-type EventItem = {
+export type EventItem = {
     title: string;
     speaker: string;
     videoUrl?: string;
+    prize?: string;
 }
 
-type Event = {
+export type Event = {
     year: string;
     events: EventItem[];
 }
-
 
 export const Events:Event[] = [
     {
         year: "2024",
         events: [
+            {
+                title: "MuSig2 and FROST",
+                speaker: "Chelsea Komlo and Jonas Nick",
+                videoUrl: "https://www.youtube.com/watch?v=9j1smRr_Ebc",
+                prize: "Bitcoin Research Prize"
+            },
             {
                 title: "De-anonymization in Bitcoin",
                 speaker: "Sarah Meiklejohn",
@@ -38,11 +44,6 @@ export const Events:Event[] = [
                 title: "Modeling Aspects of the Bitcoin Universe",
                 speaker: "Hannes Hartenstein and Matthias Grundmann",
             },
-            {
-                title: "MuSig2 and FROST",
-                speaker: "Chelsea Komlo and Jonas Nick (Bitcoin research prize winners)",
-                videoUrl: "https://www.youtube.com/watch?v=9j1smRr_Ebc"
-            }
         ]
     },
     {
