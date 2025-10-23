@@ -18,6 +18,10 @@ const headerMenu = [
         uri: '/#prize'
     },
     {
+        name: 'Speakers',
+        uri: '/#speakers'
+    },
+    {
         name: 'Agenda',
         uri: '/#agenda'
     },

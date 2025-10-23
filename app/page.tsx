@@ -6,6 +6,7 @@ import FormatContent from '@/content/includes/format.mdx'
 import PrizeContent from '@/content/includes/prize.mdx'
 import { Agenda } from '@/content/data/agenda'
 import { faq } from '@/content/data/faq'
+import { Speakers } from '@/content/data/speakers'
 import Picture from '@/components/Picture'
 import AgendaItem from '@/components/AgendaItem'
 import FAQItem from '@/components/FAQItem'
@@ -64,6 +65,51 @@ export default function Home() {
             alt="Bitcoin Research Prize"
             className="w-full h-auto max-w-7xl mx-auto block"
           />
+        </div>
+        <div id="speakers" className="p-6 md:py-16 lg:py-30 flex flex-col gap-6">
+          <div className="flex flex-col gap-12 max-w-7xl w-full mx-auto text-center items-center">
+            <h2>Speakers</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+              {Speakers.map((speaker, index) =>{
+                const SpeakerContent = () => (
+                  <div className="flex flex-col gap-6 items-center justify-start">
+                    <div className="rounded-3xl overflow-hidden  border border-zinc-500 p-2">
+                      <div className='rounded-2xl overflow-hidden w-[200px] h-[200px] grayscale-100'>
+                        <Picture
+                          src={speaker.imgSrc}
+                          src2x={speaker.imgSrc2x}
+                          alt={speaker.name}
+                          width={128}
+                          height={128}
+                        />
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <h3 className="!mb-0 text-white">{speaker.name}</h3>
+                      {speaker.title && <p className="!mb-0 text-white">{speaker.title}</p>}
+                      {speaker.organization && <p className="!mb-0 text-zinc-300">{speaker.organization}</p>}
+                    </div>
+                  </div>
+                );
+
+                return speaker.link ? (
+                  <a 
+                    href={speaker.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="transition-opacity text-white hover:!no-underline"
+                    key={index}
+                  >
+                    <SpeakerContent />
+                  </a>
+                ) : (
+                  <div key={index}>
+                    <SpeakerContent />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
         <div id="agenda" className="py-24 px-6 lg:px-12 relative overflow-y-visible overflow-x-clip">
           <div className="absolute z-0 top-0 left-0 w-full h-full scale-y-150 scale-x-125 blur-3xl bg-gradient-to-b from-orange-600/50 via-orange-500/100 to-orange-600/50 opacity-30"></div>
