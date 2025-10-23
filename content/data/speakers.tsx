@@ -10,7 +10,7 @@ type Speaker = {
 export const Speakers:Speaker[] = [
     {
         name: "Aviv Zohar",
-        title: "Professor",
+        // title: "Professor",
         organization: "The Hebrew University",
         imgSrc: "/speakers/aviv-zohar.webp",
         imgSrc2x: "/speakers/aviv-zohar@2x.webp",
@@ -18,15 +18,15 @@ export const Speakers:Speaker[] = [
     },
     {
         name: "b10c",
-        title: "Developer & Observer",
-        organization: "OpenSats Grantee",
+        // title: "Bitcoin Core Contributor",
+        organization: "Bitcoin Core",
         imgSrc: "/speakers/b10c.webp",
         imgSrc2x: "/speakers/b10c@2x.webp",
         link: "https://x.com/0xB10C"
     },
     {
         name: "Neha Narula",
-        title: "Director of Digital Currency",
+        // title: "Director of Digital Currency",
         organization: "MIT Media Lab",
         imgSrc: "/speakers/neha-narula.webp",
         imgSrc2x: "/speakers/neha-narula@2x.webp",
@@ -34,7 +34,7 @@ export const Speakers:Speaker[] = [
     },
     {
         name: "Veronika Kuett",
-        title: "Researcher",
+        // title: "Researcher",
         organization: "Ark Labs",
         imgSrc: "/speakers/veronika-kuett.webp",
         imgSrc2x: "/speakers/veronika-kuett@2x.webp",
