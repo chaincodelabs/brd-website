@@ -17,12 +17,15 @@ export default function EventRecord({
   return (
     <div className={`mb-6 ${className}`}>
       <div className="flex flex-row gap-3 items-center">
-        <h3 className="text-xl text-white">{speaker}</h3>
-        {videoUrl && (
-          <VideoLink href={videoUrl} />
-      )}
+      
+        <h3 className="text-xl text-white">
+          <span className="mr-3">{title}</span>
+          {videoUrl && (
+            <VideoLink href={videoUrl} />
+          )}
+        </h3>
     </div>
-      <p className="text-gray-300 mb-3">{title}</p>
+      <p className="text-gray-300 mb-3">{speaker}</p>
       
     </div>
   );
