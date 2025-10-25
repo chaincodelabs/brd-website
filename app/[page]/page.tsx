@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation'
 import { promises as fs } from 'fs'
 import path from 'path'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import VideoLink from '@/components/VideoLink'
+import EventRecord from '@/components/EventRecord'
 
 interface PageProps {
   params: Promise<{
@@ -37,7 +39,13 @@ export default async function DynamicPage({ params }: PageProps) {
     return (
       <main className="relative z-1 min-h-screen">
         <div className="max-w-5xl mx-auto pt-[124px] px-6">
-          <MDXRemote source={fileContent} />
+          <MDXRemote 
+            source={fileContent} 
+            components={{
+              VideoLink,
+              EventRecord,
+            }}
+          />
         </div>
       </main>
     )
