@@ -50,6 +50,12 @@ export const Events:Event[] = [
         year: "2023",
         events: [
             {
+                title: "Bitcoin's Latency–Security Analysis Made Simple",
+                speaker: "Dongning Guo and Ling Ren",
+                videoUrl: "https://www.youtube.com/watch?v=QH-7nQU7JTQ",
+                prize: "Bitcoin Research Prize"
+            },
+            {
                 title: "Network Security for Blockchain networks",
                 speaker: "Maria Apostolaki",
                 videoUrl: "https://www.youtube.com/watch?v=Grp-uzTRB2M"
@@ -68,11 +74,6 @@ export const Events:Event[] = [
                 title: "Cluster Mempool - Fixing Relay of Dependent Transactions",
                 speaker: "Pieter Wuille",
                 videoUrl: "https://www.youtube.com/watch?v=X0pLi9WH3JY"
-            },
-            {
-                title: "Bitcoin's Latency–Security Analysis Made Simple",
-                speaker: "Dongning Guo and Ling Ren",
-                videoUrl: "https://www.youtube.com/watch?v=QH-7nQU7JTQ"
             },
             {
                 title: "From paper to BIP",
