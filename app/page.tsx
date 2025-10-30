@@ -119,7 +119,7 @@ export default function Home() {
               {Agenda.length === 0 ?
                 <p className="font-sans text-2xl text-center border-zinc-800 border p-6">Coming Soon</p>
               :
-                <div className="border border-zinc-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+                <div className="border border-zinc-800 grid grid-cols-1">
                   {Agenda.map((agendaItem, key) => (
                     <AgendaItem
                       time={agendaItem.time}
