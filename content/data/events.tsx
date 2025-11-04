@@ -11,6 +11,41 @@ export type Event = {
 }
 
 export const Events:Event[] = [
+        {
+        year: "2025",
+        events: [
+            {
+                title: "BitVM2: Bridging Bitcoin to Second Layers",
+                speaker: "Robin Linus",
+                videoUrl: "xxxx",
+                prize: "Bitcoin Research Prize"
+            },
+            {
+                title: "Failing Productively",
+                speaker: "Aviv Zohar",
+            },
+            {
+                title: "Monitoring Bitcoin’s P2P network",
+                speaker: "b10c",
+            },
+            {
+                title: "Featured Report-Out from BRW25 - 01",
+                speaker: "That famous Alice",
+            },
+            {
+                title: "Bitcoin Scaling",
+                speaker: "Neha Narula",
+            },
+            {
+                title: "Ark and Research Challenges",
+                speaker: "Veronika Knuett",
+            },
+            {
+                title: "Featured Report-Outs from BRW25 - 02",
+                speaker: "That really well known Bob",
+            },
+        ]
+    },
     {
         year: "2024",
         events: [
