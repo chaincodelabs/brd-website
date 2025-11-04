@@ -52,7 +52,7 @@ export const Agenda:AgendaEntry[] = [
     {
         time: "15:40 - 16:40 EDT",
         type: "single",
-        content: [{title: "Bitcoin research prize ceremony and talk", speaker: "Secret Speaker(s)"}]
+        content: [{title: "Bitcoin Research Prize Talk: BitVM2 - Bridging Bitcoin to Second Layers", speaker: "Robin Linus"}]
     },
     {
         time: "16:40 - 16:50 EDT",
