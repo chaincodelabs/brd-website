@@ -40,4 +40,28 @@ export const Speakers:Speaker[] = [
         imgSrc2x: "/speakers/veronika-kuett@2x.webp",
         link: "https://x.com/VeronikaKuett"
     },
+        {
+        name: "Jesse Posner",
+        // title: "Ceo",
+        organization: "Vora",
+        imgSrc: "/speakers/jesse-posner.webp",
+        imgSrc2x: "/speakers/jesse-posner.webp",
+        link: "https://x.com/jesseposner"
+    },
+        {
+        name: "Constantine Doumanidis",
+        // title: "Researcher",
+        organization: "Princeton University",
+        imgSrc: "/speakers/kostas-doumanidis.webp",
+        imgSrc2x: "/speakers/kostas-doumanidis.webp",
+        link: "https://x.com/c_smokeson"
+    },
+        {
+        name: "Robin Linus",
+        // title: "Researcher",
+        organization: "BitVM",
+        imgSrc: "/speakers/robin-linus.webp",
+        imgSrc2x: "/speakers/robin-linus.webp",
+        link: "https://x.com/robin_linus"
+    },
 ]
