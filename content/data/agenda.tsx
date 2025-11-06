@@ -17,7 +17,7 @@ export const Agenda:AgendaEntry[] = [
         content: [
             {title: "Failing Productively", speaker: "Aviv Zohar"},
             {title: "Monitoring Bitcoin’s P2P network", speaker: "b10c"},
-            {title: "Featured Report-Out from BRW25", speaker: "That famous Alice"}
+            {title: "Nested Threshold Signing for Lightning", speaker: "Jesse Posner"}
         ]
     },
     {
@@ -31,36 +31,36 @@ export const Agenda:AgendaEntry[] = [
         content: [{title: "Group Session: Collaborative exploration", speaker: ""}]
     },
     {
-        time: "12:30 - 14:15 EDT",
+        time: "12:30 - 13:30 EDT",
         type: "single",
         content: [{title: "Lunch Break", speaker: ""}]
     },
     {
-        time: "14:15 - 15:20 EDT",
+        time: "13:30 - 14:35 EDT",
         type: "multi",
         content: [
             {title: "Bitcoin Scaling", speaker: "Neha Narula"},
             {title: "Ark and Research Challenges", speaker: "Veronika Knuett"},
-            {title: "Featured Report-Outs from BRW25", speaker: "That really well known Bob"}
+            {title: "P2P attacks on Bitcoin: Overview and Next Steps", speaker: "Constantine Doumanidis"}
         ]
     },
     {
-        time: "15:20 - 15:40 EDT",
+        time: "14:35 - 14:55 EDT",
         type: "single",
         content: [{title: "Coffee Break", speaker: ""}]
     },
     {
-        time: "15:40 - 16:40 EDT",
+        time: "14:55 - 15:55 EDT",
         type: "single",
         content: [{title: "Bitcoin Research Prize Talk: BitVM2 - Bridging Bitcoin to Second Layers", speaker: "Robin Linus"}]
     },
     {
-        time: "16:40 - 16:50 EDT",
+        time: "15:55 - 16:05 EDT",
         type: "single",
         content: [{title: "Closing Remarks", speaker: "Clara Shikhelman & Sergi Delgado"}]
     },
     {
-        time: "16:50 - 18:00 CET EDT",
+        time: "16:05 - 18:00 CET EDT",
         type: "single",
         content: [{title: "Happy Hour", speaker: ""}]
     }
