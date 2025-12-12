@@ -66,7 +66,7 @@ export default function Home() {
             className="w-full h-auto max-w-7xl mx-auto block"
           />
         </div>
-        <div id="speakers" className="p-6 md:py-16 lg:py-30 flex flex-col gap-6">
+        <div id="speakers" className="p-6 md:py-16 lg:py-30 flex flex-col gap-6 relative z-[1]">
           <div className="flex flex-col gap-12 max-w-7xl w-full mx-auto text-center items-center">
             <h2>Speakers</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
