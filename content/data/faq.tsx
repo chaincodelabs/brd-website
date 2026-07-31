@@ -6,7 +6,7 @@ type FAQEntry = {
 export const faq:FAQEntry[] = [
     {
         question: "When and where is the event held?",
-        answer: "The next edition is scheduled for 7th November 2025 in Midtown New York City."
+        answer: "The next edition is scheduled for October 27, 2026 in Amsterdam."
     },
     {
         question: "Who should attend Bitcoin Research Day?",
@@ -14,7 +14,7 @@ export const faq:FAQEntry[] = [
     },
     {
         question: "How do I apply or register for the event?",
-        answer: "Please apply to attend by filling out this form and we will be in touch with more details:  <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfd-OzHYbHdPXbTRWDD6MDSOb-5tU0NsQxngKh4QEuls5UhbA/viewform?usp=header\">sign up here</a>"
+        answer: "Please apply to attend by filling out this form and we will be in touch with more details:  <a href=\"https://forms.gle/2dQYqURMLKHb4ucu9\">sign up here</a>"
     },
     {
         question: "What kind of research topics are featured?",
