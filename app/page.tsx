@@ -69,6 +69,9 @@ export default function Home() {
         <div id="speakers" className="p-6 md:py-16 lg:py-30 flex flex-col gap-6 relative z-[1]">
           <div className="flex flex-col gap-12 max-w-7xl w-full mx-auto text-center items-center">
             <h2>Speakers</h2>
+            {Speakers.length === 0 ?
+              <p className="font-sans text-2xl text-center border-zinc-800 border p-6 w-full">Coming Soon</p>
+            :
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
               {Speakers.map((speaker, index) =>{
                 const SpeakerContent = () => (
@@ -109,6 +112,7 @@ export default function Home() {
                 );
               })}
             </div>
+            }
           </div>
         </div>
         <div id="agenda" className="py-24 px-6 lg:px-12 relative overflow-y-visible overflow-x-clip">

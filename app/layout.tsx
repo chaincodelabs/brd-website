@@ -26,19 +26,19 @@ const pixelifySans = Pixelify_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bitcoin Research Day 2025",
-  description: "A day dedicated to academic research that benefits Bitcoin. Join researchers, developers, and students in Midtown NYC on November 6, 2025 for presentations, lightning talks, and networking.",
+  title: "Bitcoin Research Day 2026",
+  description: "A day dedicated to academic research that benefits Bitcoin. Join researchers, developers, and students in Amsterdam on October 27, 2026 for presentations, lightning talks, and networking.",
   openGraph: {
-    title: "Bitcoin Research Day 2025",
-    description: "A day dedicated to academic research that benefits Bitcoin. Join researchers, developers, and students in Midtown NYC on November 6, 2025 for presentations, lightning talks, and networking.",
+    title: "Bitcoin Research Day 2026",
+    description: "A day dedicated to academic research that benefits Bitcoin. Join researchers, developers, and students in Amsterdam on October 27, 2026 for presentations, lightning talks, and networking.",
     type: "website",
     locale: "en_US",
     siteName: "Bitcoin Research Day",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bitcoin Research Day 2025",
-    description: "A day dedicated to academic research that benefits Bitcoin. Join researchers, developers, and students in Midtown NYC on November 6, 2025.",
+    title: "Bitcoin Research Day 2026",
+    description: "A day dedicated to academic research that benefits Bitcoin. Join researchers, developers, and students in Amsterdam on October 27, 2026.",
   },
 };
 
