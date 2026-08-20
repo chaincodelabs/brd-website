@@ -10,6 +10,7 @@ import { Speakers } from '@/content/data/speakers'
 import Picture from '@/components/Picture'
 import AgendaItem from '@/components/AgendaItem'
 import FAQItem from '@/components/FAQItem'
+import { TrophyIcon } from '@heroicons/react/24/solid'
 import { useState } from 'react'
 
 // Speakers wrap into rows of at most 4. With 5 or 6 speakers the rows are split
@@ -87,7 +88,7 @@ export default function Home() {
               {Speakers.map((speaker, index) =>{
                 const SpeakerContent = () => (
                   <div className="flex flex-col gap-6 items-center justify-start">
-                    <div className="rounded-3xl overflow-hidden  border border-zinc-500 p-2">
+                    <div className="relative rounded-3xl overflow-hidden  border border-zinc-500 p-2">
                       <div className='rounded-2xl overflow-hidden w-[200px] h-[200px] grayscale-100'>
                         <Picture
                           src={speaker.imgSrc}
@@ -97,6 +98,16 @@ export default function Home() {
                           height={128}
                         />
                       </div>
+                      {/* Prize winner badge — same trophy as the previous events list */}
+                      {speaker.prize && (
+                        <div
+                          className="absolute bottom-4 right-4"
+                          title={speaker.prize}
+                        >
+                          <TrophyIcon className="h-6 w-6 text-yellow-500" />
+                          <span className="sr-only">{speaker.prize}</span>
+                        </div>
+                      )}
                     </div>
                     <div className="flex flex-col gap-1">
                       <h3 className="!mb-0 text-white">{speaker.name}</h3>
