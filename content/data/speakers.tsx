@@ -5,6 +5,7 @@ type Speaker = {
     imgSrc: string;
     imgSrc2x: string;
     link?: string;
+    prize?: string;
 }
 
 export const Speakers:Speaker[] = [
@@ -55,5 +56,5 @@ export const Speakers:Speaker[] = [
         imgSrc2x: "/speakers/nadav-kohen@2x.webp",
         link: "https://x.com/nadav_kohen"
     },
-    // Prize winner TBD
+    // Prize winner TBD — set `prize` on the entry to show the trophy badge
 ]
