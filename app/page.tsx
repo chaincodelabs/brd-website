@@ -12,6 +12,11 @@ import AgendaItem from '@/components/AgendaItem'
 import FAQItem from '@/components/FAQItem'
 import { useState } from 'react'
 
+// Speakers wrap into rows of at most 4. With 5 or 6 speakers the rows are split
+// evenly instead (3+3 rather than 4+2), and a short final row stays centered.
+const speakersPerRow = (count: number) =>
+  count <= 4 ? count : count <= 6 ? Math.ceil(count / 2) : 4
+
 export default function Home() {
   const [openFAQs, setOpenFAQs] = useState<number[]>([])
 
@@ -72,7 +77,13 @@ export default function Home() {
             {Speakers.length === 0 ?
               <p className="font-sans text-2xl text-center border-zinc-800 border p-6 w-full">Coming Soon</p>
             :
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+            <div
+              className="flex flex-wrap justify-center gap-8 w-full mx-auto [--speaker-w:220px] xl:[--speaker-w:280px]"
+              style={{
+                // Cap the row at N speakers, so the rest wrap onto a centered row
+                maxWidth: `calc(${speakersPerRow(Speakers.length)} * var(--speaker-w) + ${speakersPerRow(Speakers.length) - 1} * 2rem)`
+              }}
+            >
               {Speakers.map((speaker, index) =>{
                 const SpeakerContent = () => (
                   <div className="flex flex-col gap-6 items-center justify-start">
@@ -100,13 +111,13 @@ export default function Home() {
                     href={speaker.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="transition-opacity text-white hover:!no-underline"
+                    className="transition-opacity text-white hover:!no-underline w-[var(--speaker-w)] max-w-full"
                     key={index}
                   >
                     <SpeakerContent />
                   </a>
                 ) : (
-                  <div key={index}>
+                  <div key={index} className="w-[var(--speaker-w)] max-w-full">
                     <SpeakerContent />
                   </div>
                 );
