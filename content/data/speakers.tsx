@@ -10,11 +10,11 @@ type Speaker = {
 
 export const Speakers:Speaker[] = [
     {
-        name: "Ghazaleh Keshavarzkalhori",
+        name: "Ghazaleh Kalhori",
         // title: "PhD candidate",
         organization: "Autonomous University of Barcelona",
-        imgSrc: "/speakers/ghazaleh-keshavarzkalhori.webp",
-        imgSrc2x: "/speakers/ghazaleh-keshavarzkalhori@2x.webp",
+        imgSrc: "/speakers/ghazaleh-kalhori.webp",
+        imgSrc2x: "/speakers/ghazaleh-kalhori@2x.webp",
         link: "https://x.com/0xgazelle"
     },        {
         name: "Jesse Posner",
