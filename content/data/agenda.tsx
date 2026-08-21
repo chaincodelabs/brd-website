@@ -15,7 +15,7 @@ export const Agenda:AgendaEntry[] = [
         time: "10:15 - 11:20 EDT",
         type: "multi",
         content: [
-            {title: "QCAP: A Bitcoin-Native Quantum Canary Alert", speaker: "Ghazaleh Keshavarzkalhori"},
+            {title: "QCAP: A Bitcoin-Native Quantum Canary Alert", speaker: "Ghazaleh Kalhori"},
             {title: "Iceberg: Nested Signing for Lightning", speaker: "Jesse Posner"},
             {title: "Native SNARK verification on Bitcoin", speaker: "Robin Linus"}
         ]
@@ -40,7 +40,7 @@ export const Agenda:AgendaEntry[] = [
         type: "multi",
         content: [
             {title: "State of the Ark", speaker: "Steven Rose"},
-            {title: "Shielded Bitcoin: Private Bitcoin Transactions via PIPEs v2", speaker: "Misha Komarov"},
+            {title: "Bringing Privacy to Bitcoin via PIPEs v2", speaker: "Misha Komarov"},
             {title: "Isoge-what? (An introduction to Isogeny-based PQ cryptography)", speaker: "Nadav Kohen"}
         ]
     },
