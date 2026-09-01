@@ -43,7 +43,7 @@ export default function Header(){
             <div className="flex flex-row justify-between w-full items-center p-6 lg:basis-1/3">
                 <div className="flex flex-row gap-4 items-center w-full">
                     <Link href="/" className="font-sans font-black !text-white text-3xl !no-underline">BRD<span className="text-[#BB393C]">26</span></Link>
-                    <Pill text="Amsterdam" uri="https://chaincode.com" icon="/location.svg" />
+                    <Pill text="De Weesper, Amsterdam" uri="https://maps.app.goo.gl/rH2MUcH6VmS4GGX2A" icon="/location.svg" />
                     
                 </div>
                 <button 
