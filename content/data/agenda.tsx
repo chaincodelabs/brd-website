@@ -40,7 +40,7 @@ export const Agenda:AgendaEntry[] = [
         type: "multi",
         content: [
             {title: "State of the Ark", speaker: "Steven Rose"},
-            {title: "Bringing Privacy to Bitcoin via PIPEs v2", speaker: "Misha Komarov"},
+            {title: "Shielded Bitcoin: Private Transfers on the Bitcoin L1", speaker: "Misha Komarov"},
             {title: "Isoge-what? (An introduction to Isogeny-based PQ cryptography)", speaker: "Nadav Kohen"}
         ]
     },
