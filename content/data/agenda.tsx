@@ -60,7 +60,7 @@ export const Agenda:AgendaEntry[] = [
         content: [{title: "Closing Remarks", speaker: "Sergi Delgado"}]
     },
     {
-        time: "16:05 - 18:00 CET CET",
+        time: "16:05 - 18:00 CET",
         type: "single",
         content: [{title: "Happy Hour", speaker: ""}]
     }
