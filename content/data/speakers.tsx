@@ -48,13 +48,21 @@ export const Speakers:Speaker[] = [
         imgSrc2x: "/speakers/misha-komarov@2x.webp",
         link: "https://x.com/nemothenoone"
     },
-        {
+    {
         name: "Nadav Kohen",
         // title: "Researcher",
-        organization: "Chaincode Labs",
+        organization: "2140",
         imgSrc: "/speakers/nadav-kohen.webp",
         imgSrc2x: "/speakers/nadav-kohen@2x.webp",
         link: "https://x.com/nadav_kohen"
+    },
+    {
+        name: "Adam Zalcman",
+        // title: "Engineering Manager",
+        organization: "Google Quantum AI",
+        imgSrc: "/speakers/adam-zalcman.webp",
+        imgSrc2x: "/speakers/adam-zalcman@2x.webp",
+        link: "https://x.com/AdamZalcman"
     },
     // Prize winner TBD — set `prize` on the entry to show the trophy badge
 ]
