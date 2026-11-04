@@ -52,7 +52,7 @@ export const Agenda:AgendaEntry[] = [
     {
         time: "14:55 - 15:55 CET",
         type: "single",
-        content: [{title: "Bitcoin Research Prize Talk: TBD", speaker: "TBD"}]
+        content: [{title: "Bitcoin Research Prize Talk: Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations", speaker: "Adam Zalcman"}]
     },
     {
         time: "15:55 - 16:05 CET",

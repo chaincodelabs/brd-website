@@ -11,6 +11,40 @@ export type Event = {
 }
 
 export const Events:Event[] = [
+    {
+        year: "2026",
+        events: [
+            {
+                title: "Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations",
+                speaker: "Adam Zalcman",
+                prize: "Bitcoin Research Prize"
+            },
+            {
+                title: "QCAP: A Bitcoin-Native Quantum Canary Alert",
+                speaker: "Ghazaleh Kalhori",
+            },
+            {
+                title: "Iceberg: Nested Signing for Lightning",
+                speaker: "Jesse Posner",
+            },
+            {
+                title: "Native SNARK verification on Bitcoin",
+                speaker: "Robin Linus",
+            },
+            {
+                title: "State of the Ark",
+                speaker: "Steven Rose",
+            },
+            {
+                title: "Shielded Bitcoin: Private Transfers on the Bitcoin L1",
+                speaker: "Misha Komarov",
+            },
+            {
+                title: "Isoge-what? (An introduction to Isogeny-based PQ cryptography)",
+                speaker: "Nadav Kohen",
+            },
+        ]
+    },
         {
         year: "2025",
         events: [
